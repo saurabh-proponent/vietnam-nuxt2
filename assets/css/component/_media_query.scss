@@ -1,0 +1,281 @@
+
+@media screen and (min-width: 992px) {
+	header {
+		.navbar {
+			.navbar-nav {
+				.nav-item {
+					.dropdown-menu {
+						display: none;
+						transition: 0.5s ease-in-out;
+					}
+					&:hover {
+						.dropdown-menu {
+							display: block;
+						}
+						.dropdown-toggle.show {
+							header {
+								.navbar {
+									.navbar-nav {
+										.nav-item {
+											&::after {
+												transform: rotate(180deg);
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+@media screen and (max-width: 991px) {
+	.heading-wrap {
+		padding: 0;
+		position: relative;
+		z-index: 2;
+		margin-bottom: 22px;
+		.heading-title {
+			text-align: center;
+		}
+	}
+	header {
+		.navbar {
+			.navbar-nav {
+				background-color: $background-color_3;
+				padding: 20px;
+				align-items: flex-start;
+				.nav-item {
+					margin-bottom: 10px;
+					.dropdown-menu {
+						position: relative;
+						left: 28px;
+					}
+				}
+			}
+		}
+	}
+	.header.sticky {
+		.navbar {
+			.navbar-toggler {
+				.hamburger {
+					.bar {
+						background-color: $background-color_3;
+					}
+				}
+			}
+			.nav-item {
+				.nav-link {
+					color: $color_4 !important;
+				}
+				.dropdown-toggle {
+					&::after {
+						filter: invert(1) brightness(6.5) !important;
+					}
+				}
+			}
+		}
+	}
+}
+@media screen and (min-width:991.1px) {
+	.mobile-view {
+		display: none;
+	}
+	.mobile-product-wrap {
+		display: none;
+	}
+	.mobile-footer {
+		display: none;
+	}
+}
+@media screen and (max-width:991px) {
+	header {
+		.top-header {
+			.navbar-brand {
+				.logo {
+					margin: 0;
+				}
+			}
+			.top-list {
+				li {
+					position: static;
+					display: none;
+					.sign-in.top {
+						position: absolute;
+						top: 18px;
+						right: 22px;
+						display: block;
+						i {
+							font-size: 22px;
+							color: $color_1;
+						}
+					}
+					.text {
+						display: none;
+					}
+					&:nth-last-child(1) {
+						display: block !important;
+					}
+				}
+			}
+			form {
+				margin: 12px 0 0;
+			}
+		}
+		.navbar {
+			position: static;
+			background: none;
+			.navbar-toggler {
+				.hamburger {
+					.bar {
+						background-color: $background-color_8;
+					}
+				}
+			}
+		}
+	}
+	.hamburger {
+		position: absolute;
+		top: 18px;
+	}
+	.hero-wrap {
+		padding: 0;
+		.aside-right {
+			.heading {
+				text-align: center;
+			}
+			.text {
+				text-align: center;
+			}
+			.detail-link {
+				float: none;
+				display: flex;
+				justify-content: center;
+			}
+		}
+	}
+	.carousel-item {
+		img {
+			margin: 0;
+            height: 200px!important;
+            object-fit: cover;
+		}
+	}
+	.desktop-view {
+		display: none;
+	}
+	.buy-banner {
+		display: none;
+	}
+	.form-section {
+		display: none;
+	}
+	.desktop-footer {
+		display: none;
+	}
+	.aside-right {
+		display: none;
+	}
+	.desktop-product-wrap {
+		display: none !important;
+	}
+	.mobile-product-wrap {
+		.product-list {
+			display: flex;
+			justify-content: space-between;
+		}
+		.product-wrap {
+			display: grid;
+			.product-name {
+				padding: 0;
+				font-size: 10px;
+				font-weight: 500;
+				line-height: 0;
+			}
+			img {
+				height: 50px;
+				width: 50px;
+				object-fit: contain;
+				border: 1px dashed #edb114;
+				border-radius: 50%;
+				padding: 6px;
+				margin-bottom: 10px;
+			}
+		}
+		.item {
+			text-align: center;
+            margin-bottom: 18px;
+		}
+	}
+	.our-suppliers {
+		.product-wrap {
+			padding:7px;
+		}
+	}
+	.sell-wrap {
+		height: fit-content;
+		margin-bottom: 10px;
+	}
+}
+@media screen and (max-width:767px) {
+	p {
+		font-size: 14px;
+	}
+	ul {
+		li {
+			font-size: 14px;
+		}
+	}
+	span {
+		font-size: 14px;
+	}
+	.heading-title {
+		font-size: 13px;
+		text-align: center;
+	}
+	.main-heading {
+		font-size: 20px;
+	}
+	.sub-heading {
+		font-size: 16px;
+	}
+	.global-space {
+		padding: 18px 0;
+	}
+	.hero-wrap {
+		.box-wraper {
+			padding: 0;
+			.icons-box {
+				.heading {
+					font-size: 8px;
+				}
+			}
+		}
+	}
+	.product-wrap {
+		&::after {
+			display: none;
+		}
+	}
+	.cta-link {
+		display: none;
+	}
+	header {
+		.top-header {
+			form {
+				.form-select {
+					display: none;
+				}
+				.form-control {
+					border-left: 1px solid #edb114;
+                    border-radius: 3px 0 0 3px;
+				}
+                .search-btn{
+                    padding: 0 7px;
+                }
+			}
+		}
+	}
+}
