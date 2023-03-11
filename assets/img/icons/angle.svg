@@ -1,0 +1,9 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 81 97" width="15" height="12">
+	<title>angle-svg</title>
+	<defs>
+		<image width="53" height="94" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADUAAABeBAMAAABx+0HaAAAAAXNSR0IB2cksfwAAADBQTFRFAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWj8cCwAAABB0Uk5TAHxIgP/5TfdGRPU+8TVMd1hhLO4AAAB6SURBVHicY2BgYFRgwAlMwnBKMbu4JuDU5uKCSyOziwtOjSJAOZci7HLtLrg1cpSAJHHYOKpxVOOoxpGsUR0k5z4Bj8bVeGz0uUCqHD4z8bgFoi0Ot22uD0a1jWob1TaStOFtE/Hj1sbA8AWXbWCNOLUBNeLUhqetCABDAcKLfaTW8gAAAABJRU5ErkJggg=="/>
+	</defs>
+	<style>
+	</style>
+	<use id="img1" href="#img1" transform="matrix(1,0,0,1,20,2)"/>
+</svg>
