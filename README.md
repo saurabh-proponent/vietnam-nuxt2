@@ -1,4 +1,7 @@
-# vietanm-project
+# vietanm-project  
+
+node version : 18.13.0 
+nuxt 2
 
 ## Build Setup
 

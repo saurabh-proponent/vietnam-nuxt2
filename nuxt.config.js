@@ -19,18 +19,21 @@ export default {
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
     ]
-    
-  },
 
+  },
+  loading: {
+    color: '#edb114',
+    height: '5px'
+  },
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
-    { src: "~/assets/css/style.scss"},
-    { src: "~/node_modules/@fortawesome/free-brands-svg-icons"},    
+    { src: "~/assets/css/style.scss" },
+    { src: "~/node_modules/@fortawesome/free-brands-svg-icons" },
   ],
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
     // { src: '~/plugins/fontawesome.js', mode: "client"  },
-    { src: '~/assets/js/font-awesome-min.js' , mode: "client" },
+    { src: '~/assets/js/font-awesome-min.js', mode: "client" },
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -38,20 +41,20 @@ export default {
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
-  ],  
+  ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
   // modules: [
   //   'bootstrap-vue/nuxt',
   // ],
-  module:{
-    rules : [
+  module: {
+    rules: [
       {
         test: /\.s[ac]ss$/i,
         use: ['style-loader', 'css-loader', 'sass-loader'],
       },
     ],
-},
+  },
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
     optimizeCSS: true,

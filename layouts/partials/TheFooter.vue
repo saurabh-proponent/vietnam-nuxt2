@@ -100,7 +100,7 @@
           <div class="row">
             <div class="col-lg-6">
               <img
-                src="../assets/img/logos/footer-logo.png"
+                src="../../assets/img/logos/footer-logo.png"
                 alt=""
                 class="img-fluid footer-logo"
               />
@@ -114,7 +114,7 @@
 
       <div class="go-to-top">
         <div class="whatsapp">
-          <a href=""><img src="../assets/img/icons/whatsapp.png" alt="" class="img-fluid" /></a>
+          <a href=""><img src="../../assets/img/icons/whatsapp.png" alt="" class="img-fluid" /></a>
         </div>
         <a href="#top">
           <div class="sticky-wraper">
@@ -165,3 +165,9 @@
     </footer>
   </div>
 </template>
+<script>
+export default {
+    name: "TheFooter",
+    components: {  },
+};
+</script>
