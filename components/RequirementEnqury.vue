@@ -121,6 +121,40 @@
             </div>
           </div>
         </div>
+
+        <div class="mobile-form">
+          <div class="container">
+            <div class="row">
+              <div class="col">
+                <div class="card-wrap dotted-design">
+                  <div class="icon">
+                    <i class="fa-sharp fa-regular fa-paper-plane"></i>
+                  </div>
+                  <p class="text">Tell us what You Need</p>
+                  <span class="arrow"></span>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card-wrap dotted-design">
+                  <div class="icon">
+                    <i class="fa-solid fa-square-envelope"></i>
+                  </div>
+                  <p class="text">Receive free quotes from sellers</p>
+                  <span class="arrow"></span>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card-wrap">
+                  <div class="icon">
+                    <i class="fa-solid fa-handshake-simple"></i>
+                  </div>
+                  <p class="text">Seal the Deal</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
       </div>
     </div>
   </section>

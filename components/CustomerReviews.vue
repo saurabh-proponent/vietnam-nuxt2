@@ -9,55 +9,37 @@
                 </div>
                 <div class="col-lg-12">
                     <div id="carousel-review" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carousel-review" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carousel-review" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carousel-review" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
                         <div class="carousel-inner">
                             <div class="carousel-item active" data-bs-interval="10000">
-                                <div class="row">
-                                    <div class="col-md-2">
-                                    </div>
-                                    <div class="col-md-10">
-                                        <i class="fa-solid fa-quote-left"></i>
-                                        <img src="../assets/img/testimonial/michle.jpg" alt="">
-                                        <h5 class="heading">Lorem ipsum dolor sit amet</h5>
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, obcaecati eveniet? Nemo rem mollitia laborum at aut odit eveniet ullam fugiat quidem accusantium, consectetur, neque molestias repudiandae excepturi perferendis amet?</p>
-                                        <h5 class="name">Vivek Negi</h5>
-                                    </div>
-                                </div>
+                               <img src="../assets/img/testimonial/michle.jpg" class="img-fluid" alt="">
+                               <h5 class="name">Saurabh Rawat</h5>
+                               <p class="designation">Web Developer</p>
+                               <i class="fa-solid fa-quote-left"></i>
+                               <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, obcaecati eveniet? Nemo rem mollitia aborum at aut odit eveniet ullam fugiat quidem accusantium, consectetur, neque molestias repudiandae xcepturi perferendis amet? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam, maxime, obcaecati accusamus quam praesentium veritatis nihil magnam, est assumenda ipsa corrupti iure. Iste provident incidunt.</span>
+                               <i class="fa-solid fa-quote-right"></i>
                             </div>
                             <div class="carousel-item" data-bs-interval="2000">
-                                <div class="row">
-                                    <div class="col-md-2">
-                                        <i class="fa-solid fa-quote-left"></i>
-                                    </div>
-                                    <div class="col-md-10">
-                                        <h5 class="heading">Lorem ipsum dolor sit amet</h5>
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, obcaecati eveniet? Nemo rem mollitia laborum at aut odit eveniet ullam fugiat quidem accusantium, consectetur, neque molestias repudiandae excepturi perferendis amet?</p>
-                                        <h5 class="name">Vivek Negi</h5>
-                                    </div>
-                                </div>
+                                <img src="../assets/img/testimonial/michle.jpg" class="img-fluid" alt="">
+                                <h5 class="name">Saurabh Rawat</h5>
+                                <p class="designation">Web Developer</p>
+                                <i class="fa-solid fa-quote-left"></i>
+                                <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, obcaecati eveniet? Nemo rem mollitia aborum at aut odit eveniet ullam fugiat quidem accusantium, consectetur, neque molestias repudiandae xcepturi perferendis amet? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam, maxime, obcaecati accusamus quam praesentium veritatis nihil magnam, est assumenda ipsa corrupti iure. Iste provident incidunt.</span>
+                                <i class="fa-solid fa-quote-right"></i>
                             </div>
                             <div class="carousel-item">
-                                <div class="row">
-                                    <div class="col-md-2">
-                                        <i class="fa-solid fa-quote-left"></i>
-                                    </div>
-                                    <div class="col-md-10">
-                                        <h5 class="heading">Lorem ipsum dolor sit amet</h5>
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, obcaecati eveniet? Nemo rem mollitia laborum at aut odit eveniet ullam fugiat quidem accusantium, consectetur, neque molestias repudiandae excepturi perferendis amet?</p>
-                                        <h5 class="name">Vivek Negi</h5>
-                                    </div>
-                                </div>
+                                <img src="../assets/img/testimonial/michle.jpg" class="img-fluid" alt="">
+                                <h5 class="name">Saurabh Rawat</h5>
+                                <p class="designation">Web Developer</p>
+                                <i class="fa-solid fa-quote-left"></i>
+                                <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, obcaecati eveniet? Nemo rem mollitia aborum at aut odit eveniet ullam fugiat quidem accusantium, consectetur, neque molestias repudiandae xcepturi perferendis amet? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam, maxime, obcaecati accusamus quam praesentium veritatis nihil magnam, est assumenda ipsa corrupti iure. Iste provident incidunt.</span>
+                                <i class="fa-solid fa-quote-right"></i>
                             </div>
                         </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carousel-review"
-                            data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carousel-review"
-                            data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                        </button>
                     </div>
                 </div>
             </div>

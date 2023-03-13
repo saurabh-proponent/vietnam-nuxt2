@@ -155,14 +155,36 @@
       </div>
 
       <div class="accordion mobile-view">
-        <div class="accordion-item" v-for="(item, index) in items" :key="index">
-          <div class="accordion-title" @click="toggleItem(index)" v-bind:class="active === index ? 'active':''">{{ item.title }} <i class="fa-solid fa-chevron-down"></i></div>
-          <div class="accordion-content" v-bind:class="active === index ? 'active contentArea' : 'contentArea'">
-            <ul class="list-item">
-              <li class="item" v-for="(item, index) in items" :key="index">
-                <a href="" v-for="(item2, index) in item.content" :key="index">{{ item2 }}</a> <i class="fa-solid fa-chevron-right"></i>
-              </li>
-            </ul>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="heading-wrap">
+                <h1 class="main-heading">Medical Supplies For You</h1>
+                <button class="btn mobile-btn">See All</button>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item" v-for="(item, index) in items" :key="index">
+            <div
+              class="accordion-title"
+              @click="toggleItem(index)"
+              v-bind:class="active === index ? 'active' : ''"
+            >
+              {{ item.title }} <i class="fa-solid fa-chevron-down"></i>
+            </div>
+            <div
+              class="accordion-content"
+              v-bind:class="active === index ? 'active contentArea' : 'contentArea'"
+            >
+              <ul class="list-item">
+                <li class="item" v-for="(item, index) in items" :key="index">
+                  <a href="" v-for="(item2, index) in item.content" :key="index">{{
+                    item2
+                  }}</a>
+                  <i class="fa-solid fa-chevron-right"></i>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
@@ -178,24 +200,17 @@ export default {
       items: [
         {
           title: "Injection",
-          content:[
-            "Rapid Test Kit"
-          ],
+          content: ["Rapid Test Kit"],
           isActive: false,
         },
         {
           title: "Diagnostic Test Kit",
-          content:[
-            "Biochemistry Analyzer"
-          ],
+          content: ["Biochemistry Analyzer"],
           isActive: false,
         },
         {
           title: "Stethoscope",
-          content:
-          [ 
-            "Blood Bank Equipment"
-          ],
+          content: ["Blood Bank Equipment"],
           isActive: false,
         },
       ],
@@ -203,8 +218,11 @@ export default {
   },
   methods: {
     toggleItem(index) {
-      this.active = index;
-      //   this.items[index].isActive = !this.items[index].isActive
+      if (this.active === index) {
+        this.active = null;
+      } else {
+        this.active = index;
+      }
     },
   },
 };

@@ -214,6 +214,15 @@ button {
 	}
 }
 
+.mobile-btn{
+	background-color: $color_3;
+	color: #fff;
+    padding: 5px 10px;
+    font-size: 12px;
+    border-radius: 0;
+	white-space: nowrap;
+}
+
 .form-control {
 	&:focus {
 		border-color: $border-color_2 !important;
