@@ -105,14 +105,14 @@ strong {
 }
 .heading-wrap {
 	margin-bottom: 25px;
+	text-align: center;
 	.main-heading {
 		margin-bottom: 0;
-	}
-	.text {
-		text-align: center;
-		margin: 0;
-		display: none;
-	}
+		&::after{
+			right: 0;
+			margin: auto;
+		}
+	}	
 }
 
 .main-heading {
@@ -174,7 +174,7 @@ strong {
 	cursor: pointer;
 	transform: all 0.3s;
 	position: relative;
-	border-radius: 5px;
+	border-radius: 0;
 	border: none;
 	&:before {
 		content: "";

@@ -13,7 +13,6 @@ export default {
     ],
     script: [
       {
-
         src: '/bootstrap.min.js',
       }
     ],
@@ -26,11 +25,12 @@ export default {
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
     { src: "~/assets/css/style.scss"},
+    { src: "~/node_modules/@fortawesome/free-brands-svg-icons"},    
   ],
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
-    
-    // { src: "~/assets/js/font-awesome.min.js", mode: "client" },
+    // { src: '~/plugins/fontawesome.js', mode: "client"  },
+    { src: '~/assets/js/font-awesome-min.js' , mode: "client" },
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -54,16 +54,16 @@ export default {
 },
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
-  optimizeCSS: true,
-  extractCSS: true,
-  collapseBooleanAttributes: true,
-  decodeEntities: true,
-  minifyCSS: true,
-  minifyJS: true,
-  processConditionalComments: true,
-  removeEmptyAttributes: true,
-  removeRedundantAttributes: true,
-  trimCustomFragments: true,
-  useShortDoctype: true,
+    optimizeCSS: true,
+    extractCSS: true,
+    collapseBooleanAttributes: true,
+    decodeEntities: true,
+    minifyCSS: true,
+    minifyJS: true,
+    processConditionalComments: true,
+    removeEmptyAttributes: true,
+    removeRedundantAttributes: true,
+    trimCustomFragments: true,
+    useShortDoctype: true,
   }
 }

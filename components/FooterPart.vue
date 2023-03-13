@@ -114,13 +114,11 @@
 
       <div class="go-to-top">
         <div class="whatsapp">
-          <a href=""
-            ><img src="assets/img/icons/whatsapp.png" alt="" class="img-fluid"
-          /></a>
+          <a href=""><img src="../assets/img/icons/whatsapp.png" alt="" class="img-fluid" /></a>
         </div>
         <a href="#top">
           <div class="sticky-wraper">
-            <Icon name="fa:long-arrow-up" />
+            <i class="fa-solid fa-up-long"></i>
           </div>
         </a>
         <span class="text">TOP</span>
@@ -136,6 +134,34 @@
           Get Best Price
         </button>
       </div>
+    </footer>
+
+    <footer class="mobile-footer">
+      <nav class="navbar">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#"><i class="fa-solid fa-house"></i>
+              <p class="link">Home</p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#"><i class="fa-solid fa-user"></i>
+              <p class="link">Profile</p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#"><i class="fa-sharp fa-regular fa-bell"></i>
+              <p class="link">Notification</p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#"><i class="fa-solid fa-basket-shopping"></i>
+              <p class="link">Cart</p>
+            </a>
+          </li>
+         
+        </ul>
+      </nav>
     </footer>
   </div>
 </template>
