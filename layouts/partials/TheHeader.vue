@@ -1,4 +1,3 @@
-<script lang="ts" setup></script>
 
 <template>
  <header class="header">
@@ -6,7 +5,7 @@
             <div class="container-fluid">
                 <div class="row d-flex align-items-center">
                     <div class="col-lg-3">
-                        <a class="navbar-brand" href="#"><img src="../assets/img/logos/logo.svg" class="img-fluid logo" alt=""></a>
+                        <a class="navbar-brand" href="#"><img src="../../assets/img/logos/logo.svg" class="img-fluid logo" alt=""></a>
                     </div>
                     <div class="col-lg-5">
                         <form class="d-flex" role="search">
@@ -144,6 +143,28 @@
     </header>
 </template>
 
+
+
+
+
+
+
+
+<script>
+
+
+export default {
+    name: "TheHeader",
+    components: {  },
+};
+</script>
+
+
+
+
+
 <style scoped>
 
 </style>
+
+
