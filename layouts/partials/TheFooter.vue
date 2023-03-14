@@ -99,15 +99,11 @@
         <div class="footer-bottom">
           <div class="row">
             <div class="col-lg-6">
-<<<<<<< HEAD:layouts/partials/TheFooter.vue
               <img
                 src="../../assets/img/logos/footer-logo.png"
                 alt=""
                 class="img-fluid footer-logo"
               />
-=======
-              <img src="../assets/img/logos/footer-logo.png" alt="" class="img-fluid footer-logo"/>
->>>>>>> dev1:components/FooterPart.vue
             </div>
             <div class="col-lg-6">
               <span class="copyright-text">© 2023 Vietnam Factory.</span>
@@ -115,7 +111,6 @@
           </div>
         </div>
       </div>
-<<<<<<< HEAD:layouts/partials/TheFooter.vue
 
       <div class="go-to-top">
         <div class="whatsapp">
@@ -139,8 +134,6 @@
           Get Best Price
         </button>
       </div>
-=======
->>>>>>> dev1:components/FooterPart.vue
     </footer>
 
     <div class="go-to-top">
@@ -240,13 +233,9 @@
     </footer>
   </div>
 </template>
-<<<<<<< HEAD:layouts/partials/TheFooter.vue
 <script>
 export default {
     name: "TheFooter",
     components: {  },
 };
 </script>
-=======
-
->>>>>>> dev1:components/FooterPart.vue
