@@ -1,5 +1,5 @@
-<template>
-  <div>
+<template  >
+  <div v-if="isLoaded">
     <Mainbanner />
     <CategoryProducts />
     <RequirementEnqury />
@@ -8,10 +8,15 @@
     <BuyerCategories />
     <CustomerReviews />
     <RequirementEnqury />
+
+
   </div>
 </template>
 
 <script>
+
+import { mapActions, mapState } from "vuex";
+
 import Mainbanner from "../components/Mainbanner.vue";
 import CategoryProducts from "../components/CategoryProducts.vue";
 import RequirementEnqury from "../components/RequirementEnqury.vue";
@@ -26,18 +31,33 @@ Vue.use(VueTelInput);
 export default {
   name: "IndexPage",
   components: { Mainbanner, CategoryProducts, RequirementEnqury, BuyerCategories, CustomerReviews, },
+  data() {
+    return {
+      isLoaded: false
+    }
+  },
   methods: {
-    async getUser() {
+    ...mapActions('categories', ['fetchCategories']),
+    async getCategory() {
       try {
-        const res = await this.$axios.get('https://devadmin.vietnamfactoryb2b.com/api/categories')
-        console.log(res)
+        const res = await this.$axios.get('/categories')
+        if (res.data) {
+          this.isLoaded = true
+          console.log(res)
+
+        }
+
       } catch (e) {
         console.log(e)
       }
     },
   },
   mounted() {
-    this.getUser()
+    this.getCategory()
+    this.$nextTick(() => {
+      this.$nuxt.$loading.start()
+      setTimeout(() => this.$nuxt.$loading.finish(), 500)
+    })
   }
 
 

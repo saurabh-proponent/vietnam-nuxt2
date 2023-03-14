@@ -22,8 +22,8 @@ export default {
 
   },
   loading: {
-    color: '#edb114',
-    height: '5px'
+    color: 'green',
+    height: '1px'
   },
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
