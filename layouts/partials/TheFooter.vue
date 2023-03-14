@@ -138,7 +138,7 @@
 
     <div class="go-to-top">
       <div class="whatsapp">
-        <a href=""><img src="../assets/img/icons/whatsapp.png" alt="" class="img-fluid" /></a>
+        <a href=""><img src="../../assets/img/icons/whatsapp.png" alt="" class="img-fluid" /></a>
       </div>
       <a href="#top">
         <div class="sticky-wraper">
