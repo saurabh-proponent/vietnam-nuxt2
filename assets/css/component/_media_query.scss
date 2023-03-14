@@ -99,7 +99,8 @@
 	.mobile-view,
 	.mobile-product-wrap,
 	.mobile-footer, 
-	.mobile-form{
+	.mobile-form,
+	.latest-bye-leads-mobile{
 		display: none;
 	}
 }
@@ -202,7 +203,7 @@
 		display: none;
 	}
 
-	.form-section .form {
+	.form-section.form, .form {
 		display: none;
 	}
 
@@ -219,35 +220,30 @@
 	}
 
 	.mobile-product-wrap {
+		
 		.product-list {
 			display: flex;
 			justify-content: space-between;
+			flex-wrap: nowrap;
+			overflow-x:scroll;
 		}
 
 		.product-wrap {
 			display: grid;
-
-			.product-name {
-				padding: 0;
-				font-size: 10px;
-				font-weight: 500;
-				line-height: 0;
-			}
+			border: 1px dashed #edb114;
+			border-radius: 50%;
+			padding: 18px;
+    		height: 80px;
+    		width: 80px;
 
 			img {
-				height: 50px;
-				width: 50px;
 				object-fit: contain;
-				border: 1px dashed #edb114;
-				border-radius: 50%;
-				padding: 6px;
-				margin-bottom: 10px;
 			}
 		}
 
 		.item {
 			text-align: center;
-			margin-bottom: 18px;
+			margin:12px 12px 18px;
 		}
 	}
 
@@ -261,21 +257,30 @@
 		height: fit-content;
 		margin-bottom: 10px;
 	}
-}
 
-@media screen and (max-width:767px) {
-	p {
-		font-size: 14px;
+	.desktop-latest-bye-leads{
+		display: none;
 	}
 
-	ul {
-		li {
-			font-size: 14px;
+	.modal-body.form{
+		display: block;
+		padding: 15px 10px;
+
+		.contact-form{
+			padding:0;
 		}
 	}
 
-	span {
-		font-size: 14px;
+	.product-wrap {
+		&::after {
+			display: none;
+		}
+	}
+}
+
+@media screen and (max-width:767px) {
+	p,span, ul li{
+		font-size: 14px!important;
 	}
 
 	.heading-title {
@@ -294,11 +299,6 @@
 
 	.global-space {
 		padding: 18px 0 !important;
-	}
-	.product-wrap {
-		&::after {
-			display: none;
-		}
 	}
 
 	.cta-link {
@@ -338,5 +338,25 @@
 	input::placeholder{
 		font-size: 14px!important;
 		font-weight: 400!important;
+	}
+
+	.buyer-sec {
+		.all-buyer-wrap{
+			padding: 8px 5px!important;
+			justify-content: flex-start!important;
+			.product-name{
+				padding-left: 3px!important;
+				font-size: 12px!important;
+			}
+		}
+	}
+
+	.go-to-top .text, .sticky-wraper{
+		display: none!important;
+	}
+
+	.pop-cta button{
+		padding: 10px 18px;
+		font-size: 14px;
 	}
 }

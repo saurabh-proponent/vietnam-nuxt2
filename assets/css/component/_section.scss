@@ -272,11 +272,40 @@
 				appearance: textfield;
 				padding-left: 55px;
 			}
+
+			.vue-tel-input {
+				border: none;
+				.vti__selection {
+					margin: 0;
+					.vti__dropdown-arrow,
+					span{
+					margin-bottom: 0;
+					}
+				}
+
+				.vti__flag-wrapper{
+					span{
+						margin-bottom: 0;
+					}
+				}
+
+				::placeholder{
+					opacity: 0;
+				}
+
+				&:focus-within{
+					border: none;
+					box-shadow:none;
+				}
+				.vti__dropdown{
+					background-color:#e1e1e1;
+				}
+			}
 		}
 
 		.number {
 			label {
-				margin-left: 82px;
+				margin-left: 60px;
 				z-index: 1;
 			}
 		}
@@ -317,14 +346,15 @@
 			color: $color_3;
 		}
 	}
-	.dotted-design{
+
+	.dotted-design {
 		&::after {
 			content: "";
-    		position: absolute;
-    		width: calc(100% - 20px);
-    		border-top: 1px solid #edb114;
-    		border-style: dashed;
-    		top: 20%;
+			position: absolute;
+			width: calc(100% - 20px);
+			border-top: 1px solid #edb114;
+			border-style: dashed;
+			top: 20%;
 			right: -65px;
 		}
 	}
@@ -495,6 +525,65 @@
 		}
 	}
 }
+
+/*----------- mobile bye leads---------*/
+.latest-bye-leads-mobile {
+	.accordion.mobile-view {
+		.accordion-item {
+			.accordion-title {
+				span {
+					margin: 0 !important;
+				}
+
+				img {
+					width: 40px;
+				}
+
+				&.active {
+					img {
+						filter: invert(1) brightness(4.5);
+					}
+
+					.text {
+						color: #fff;
+					}
+				}
+			}
+
+			.accordion-content {
+				padding: 18px 0;
+
+				.buyer-from {
+					text-align: center;
+
+					.heading {
+						font-size: 14px;
+						color: #000;
+					}
+
+					.country {
+						font-size: 20px !important;
+						color: #edb114;
+						font-weight: 600;
+					}
+				}
+
+				.list {
+					border-left: 2px solid $color_3;
+					width: 100%;
+
+					li {
+						margin: 0;
+						padding: 0 7px;
+					}
+				}
+
+			}
+
+		}
+	}
+}
+
 
 .sell-wrap {
 	padding: 15px 10px;
@@ -748,3 +837,18 @@
 		background-color: $color_7;
 	}
 }
+
+/*----------- End -------------*/
+
+/*----------- Modal CSS -------------*/
+.modal-content {
+	border-radius: 0;
+
+	.modal-header {
+		.main-heading {
+			margin: 0;
+		}
+	}
+}
+
+/*----------- End -------------*/

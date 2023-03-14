@@ -45,50 +45,50 @@ footer {
             font-size: 14px;
         }
     }
-    .go-to-top {
-        position: fixed;
-        z-index: 99;
-        right: 10px;
-        bottom: 1rem;
-        float: right;
-        text-align: center;
+}
+.go-to-top {
+    position: fixed;
+    z-index: 99;
+    right: 10px;
+    bottom: 1rem;
+    float: right;
+    text-align: center;
 
-        .sticky-wraper {
-            height: 50px;
-            width: 50px;
-            border-radius: 50%;
-            padding: 20px;
-            background-color: $color_3;
-            display: flex;
-            align-items: center;
+    .sticky-wraper {
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        padding: 20px;
+        background-color: $color_3;
+        display: flex;
+        align-items: center;
 
-            i {
-                color: #000;
-            }
-        }
-
-        .text {
-            color: $color_3;
-        }
-
-        .whatsapp{
-            margin-bottom: 22px;
-            img{
-                width: 45px;
-                animation: ring 4s .7s ease-in-out infinite;
-            }
+        i {
+            color: #000;
         }
     }
 
-    .pop-cta{
-        position: fixed;
-        left: 10px;
-        bottom: 2rem;
-        z-index: 99;
+    .text {
+        color: $color_3;
+    }
 
-        button{
-            padding: 14px 26px;
+    .whatsapp{
+        margin-bottom: 22px;
+        img{
+            width: 45px;
+            animation: ring 4s .7s ease-in-out infinite;
         }
+    }
+}
+
+.pop-cta{
+    position: fixed;
+    left: 10px;
+    bottom: 2rem;
+    z-index: 99;
+
+    button{
+        padding: 14px 26px;
     }
 }
 

@@ -8,9 +8,11 @@
             <h1 class="main-heading">BUY LEADS BY CATEGORIES</h1>
           </div>
           <div class="col-lg-6">
-            <a href="" class="cta-link">VIEW ALL<i class="fa-solid fa-angles-right"></i></a>
+            <a href="" class="cta-link"
+              >VIEW ALL<i class="fa-solid fa-angles-right"></i
+            ></a>
           </div>
-          <div class="col-lg-2">
+          <div class="col-lg-2 col-6">
             <a href="">
               <div class="all-buyer-wrap">
                 <img
@@ -22,7 +24,7 @@
               </div>
             </a>
           </div>
-          <div class="col-lg-2">
+          <div class="col-lg-2 col-6">
             <a href="">
               <div class="all-buyer-wrap">
                 <img
@@ -34,7 +36,7 @@
               </div>
             </a>
           </div>
-          <div class="col-lg-2">
+          <div class="col-lg-2 col-6">
             <a href="">
               <div class="all-buyer-wrap">
                 <img
@@ -46,7 +48,7 @@
               </div>
             </a>
           </div>
-          <div class="col-lg-2">
+          <div class="col-lg-2 col-6">
             <a href="">
               <div class="all-buyer-wrap">
                 <img
@@ -58,7 +60,7 @@
               </div>
             </a>
           </div>
-          <div class="col-lg-2">
+          <div class="col-lg-2 col-6">
             <a href="">
               <div class="all-buyer-wrap">
                 <img
@@ -70,7 +72,7 @@
               </div>
             </a>
           </div>
-          <div class="col-lg-2">
+          <div class="col-lg-2 col-6">
             <a href="">
               <div class="all-buyer-wrap">
                 <img
@@ -82,310 +84,367 @@
               </div>
             </a>
           </div>
-          <div class="col-lg-12">
-            <h1 class="main-heading">LATEST BUY LEADS</h1>
-          </div>
-          <div class="col-lg-4">
-            <div class="buyer-wraper">
-              <a href="">
-                <div class="card">
-                  <div class="card-header">
-                    <div class="row">
-                      <div class="col-md-8">
-                        <p class="text">ICUMSA 45 SUGAR</p>
-                      </div>
-                      <div class="col-md-4">
-                        <p class="text text-end">16 JAN 2023</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card-body">
-                    <div class="row">
-                      <div class="col-md-4 col-12">
-                        <img
-                          src="../assets/img/icons/byuer-leads/medical.png"
-                          class="img-fluid"
-                          alt=""
-                        />
-                        <p class="country">
-                          Buyer <br />
-                          From China
-                        </p>
-                      </div>
-                      <div class="col-md-4 col-6">
-                        <ul>
-                          <li class="heading">Product Name:</li>
-                          <li class="heading">Quantity:</li>
-                          <li class="heading">Payment:</li>
-                          <li class="heading">Destination:</li>
-                        </ul>
-                      </div>
-                      <div class="col-md-4 col-6">
-                        <ul>
-                          <li>Icumsa45 -</li>
-                          <li>MOQ -</li>
-                          <li>LC</li>
-                          <li>Guangxi, China</li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </div>
-          </div>
+        </div>
 
-          <div class="col-lg-4">
-            <div class="buyer-wraper">
-              <a href="">
-                <div class="card">
-                  <div class="card-header">
-                    <div class="row">
-                      <div class="col-md-8">
-                        <p class="text">ICUMSA 45 SUGAR</p>
-                      </div>
-                      <div class="col-md-4">
-                        <p class="text text-end">16 JAN 2023</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card-body">
-                    <div class="row">
-                      <div class="col-md-4">
-                        <img
-                          src="../assets/img/icons/byuer-leads/medical.png"
-                          class="img-fluid"
-                          alt=""
-                        />
-                        <p class="country">
-                          Buyer <br />
-                          From China
-                        </p>
-                      </div>
-                      <div class="col-md-4">
-                        <ul>
-                          <li class="heading">Product Name:</li>
-                          <li class="heading">Quantity:</li>
-                          <li class="heading">Payment:</li>
-                          <li class="heading">Destination:</li>
-                        </ul>
-                      </div>
-                      <div class="col-md-4">
-                        <ul>
-                          <li>Icumsa45 -</li>
-                          <li>MOQ -</li>
-                          <li>LC</li>
-                          <li>Guangxi, China</li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </a>
+        <div class="desktop-latest-bye-leads">
+          <div class="row">
+            <div class="col-lg-12">
+              <h1 class="main-heading">LATEST BUY LEADS</h1>
             </div>
-          </div>
-
-          <div class="col-lg-4">
-            <div class="buyer-wraper">
-              <a href="">
-                <div class="card">
-                  <div class="card-header">
-                    <div class="row">
-                      <div class="col-md-8">
-                        <p class="text">ICUMSA 45 SUGAR</p>
+            <div class="col-lg-4">
+              <div class="buyer-wraper">
+                <a href="">
+                  <div class="card">
+                    <div class="card-header">
+                      <div class="row">
+                        <div class="col">
+                          <p class="text">ICUMSA 45 SUGAR</p>
+                        </div>
+                        <div class="col">
+                          <p class="text text-end">16 JAN 2023</p>
+                        </div>
                       </div>
-                      <div class="col-md-4">
-                        <p class="text text-end">16 JAN 2023</p>
+                    </div>
+                    <div class="card-body">
+                      <div class="row">
+                        <div class="col-md-4 col-12">
+                          <img
+                            src="../assets/img/icons/byuer-leads/medical.png"
+                            class="img-fluid"
+                            alt=""
+                          />
+                          <p class="country">
+                            Buyer <br />
+                            From China
+                          </p>
+                        </div>
+                        <div class="col-md-4 col-6">
+                          <ul>
+                            <li class="heading">Product Name:</li>
+                            <li class="heading">Quantity:</li>
+                            <li class="heading">Payment:</li>
+                            <li class="heading">Destination:</li>
+                          </ul>
+                        </div>
+                        <div class="col-md-4 col-6">
+                          <ul>
+                            <li>Icumsa45 -</li>
+                            <li>MOQ -</li>
+                            <li>LC</li>
+                            <li>Guangxi, China</li>
+                          </ul>
+                        </div>
                       </div>
                     </div>
                   </div>
-                  <div class="card-body">
-                    <div class="row">
-                      <div class="col-md-4">
-                        <img
-                          src="../assets/img/icons/byuer-leads/medical.png"
-                          class="img-fluid"
-                          alt=""
-                        />
-                        <p class="country">
-                          Buyer <br />
-                          From China
-                        </p>
-                      </div>
-                      <div class="col-md-4">
-                        <ul>
-                          <li class="heading">Product Name:</li>
-                          <li class="heading">Quantity:</li>
-                          <li class="heading">Payment:</li>
-                          <li class="heading">Destination:</li>
-                        </ul>
-                      </div>
-                      <div class="col-md-4">
-                        <ul>
-                          <li>Icumsa45 -</li>
-                          <li>MOQ -</li>
-                          <li>LC</li>
-                          <li>Guangxi, China</li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </a>
+                </a>
+              </div>
             </div>
-          </div>
 
-          <div class="col-lg-4">
-            <div class="buyer-wraper">
-              <a href="">
-                <div class="card">
-                  <div class="card-header">
-                    <div class="row">
-                      <div class="col-md-8">
-                        <p class="text">ICUMSA 45 SUGAR</p>
+            <div class="col-lg-4">
+              <div class="buyer-wraper">
+                <a href="">
+                  <div class="card">
+                    <div class="card-header">
+                      <div class="row">
+                        <div class="col">
+                          <p class="text">ICUMSA 45 SUGAR</p>
+                        </div>
+                        <div class="col">
+                          <p class="text text-end">16 JAN 2023</p>
+                        </div>
                       </div>
-                      <div class="col-md-4">
-                        <p class="text text-end">16 JAN 2023</p>
+                    </div>
+                    <div class="card-body">
+                      <div class="row">
+                        <div class="col-md-4 col-12">
+                          <img
+                            src="../assets/img/icons/byuer-leads/medical.png"
+                            class="img-fluid"
+                            alt=""
+                          />
+                          <p class="country">
+                            Buyer <br />
+                            From China
+                          </p>
+                        </div>
+                        <div class="col-md-4 col-6">
+                          <ul>
+                            <li class="heading">Product Name:</li>
+                            <li class="heading">Quantity:</li>
+                            <li class="heading">Payment:</li>
+                            <li class="heading">Destination:</li>
+                          </ul>
+                        </div>
+                        <div class="col-md-4 col-6">
+                          <ul>
+                            <li>Icumsa45 -</li>
+                            <li>MOQ -</li>
+                            <li>LC</li>
+                            <li>Guangxi, China</li>
+                          </ul>
+                        </div>
                       </div>
                     </div>
                   </div>
-                  <div class="card-body">
-                    <div class="row">
-                      <div class="col-md-4">
-                        <img
-                          src="../assets/img/icons/byuer-leads/medical.png"
-                          class="img-fluid"
-                          alt=""
-                        />
-                        <p class="country">
-                          Buyer <br />
-                          From China
-                        </p>
-                      </div>
-                      <div class="col-md-4">
-                        <ul>
-                          <li class="heading">Product Name:</li>
-                          <li class="heading">Quantity:</li>
-                          <li class="heading">Payment:</li>
-                          <li class="heading">Destination:</li>
-                        </ul>
-                      </div>
-                      <div class="col-md-4">
-                        <ul>
-                          <li>Icumsa45 -</li>
-                          <li>MOQ -</li>
-                          <li>LC</li>
-                          <li>Guangxi, China</li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </a>
+                </a>
+              </div>
             </div>
-          </div>
 
-          <div class="col-lg-4">
-            <div class="buyer-wraper">
-              <a href="">
-                <div class="card">
-                  <div class="card-header">
-                    <div class="row">
-                      <div class="col-md-8">
-                        <p class="text">ICUMSA 45 SUGAR</p>
+            <div class="col-lg-4">
+              <div class="buyer-wraper">
+                <a href="">
+                  <div class="card">
+                    <div class="card-header">
+                      <div class="row">
+                        <div class="col">
+                          <p class="text">ICUMSA 45 SUGAR</p>
+                        </div>
+                        <div class="col">
+                          <p class="text text-end">16 JAN 2023</p>
+                        </div>
                       </div>
-                      <div class="col-md-4">
-                        <p class="text text-end">16 JAN 2023</p>
+                    </div>
+                    <div class="card-body">
+                      <div class="row">
+                        <div class="col-md-4 col-12">
+                          <img
+                            src="../assets/img/icons/byuer-leads/medical.png"
+                            class="img-fluid"
+                            alt=""
+                          />
+                          <p class="country">
+                            Buyer <br />
+                            From China
+                          </p>
+                        </div>
+                        <div class="col-md-4 col-6">
+                          <ul>
+                            <li class="heading">Product Name:</li>
+                            <li class="heading">Quantity:</li>
+                            <li class="heading">Payment:</li>
+                            <li class="heading">Destination:</li>
+                          </ul>
+                        </div>
+                        <div class="col-md-4 col-6">
+                          <ul>
+                            <li>Icumsa45 -</li>
+                            <li>MOQ -</li>
+                            <li>LC</li>
+                            <li>Guangxi, China</li>
+                          </ul>
+                        </div>
                       </div>
                     </div>
                   </div>
-                  <div class="card-body">
-                    <div class="row">
-                      <div class="col-md-4">
-                        <img
-                          src="../assets/img/icons/byuer-leads/medical.png"
-                          class="img-fluid"
-                          alt=""
-                        />
-                        <p class="country">
-                          Buyer <br />
-                          From China
-                        </p>
-                      </div>
-                      <div class="col-md-4">
-                        <ul>
-                          <li class="heading">Product Name:</li>
-                          <li class="heading">Quantity:</li>
-                          <li class="heading">Payment:</li>
-                          <li class="heading">Destination:</li>
-                        </ul>
-                      </div>
-                      <div class="col-md-4">
-                        <ul>
-                          <li>Icumsa45 -</li>
-                          <li>MOQ -</li>
-                          <li>LC</li>
-                          <li>Guangxi, China</li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </a>
+                </a>
+              </div>
             </div>
-          </div>
 
-          <div class="col-lg-4">
-            <div class="buyer-wraper">
-              <a href="">
-                <div class="card">
-                  <div class="card-header">
-                    <div class="row">
-                      <div class="col-md-8">
-                        <p class="text">ICUMSA 45 SUGAR</p>
+            <div class="col-lg-4">
+              <div class="buyer-wraper">
+                <a href="">
+                  <div class="card">
+                    <div class="card-header">
+                      <div class="row">
+                        <div class="col">
+                          <p class="text">ICUMSA 45 SUGAR</p>
+                        </div>
+                        <div class="col">
+                          <p class="text text-end">16 JAN 2023</p>
+                        </div>
                       </div>
-                      <div class="col-md-4">
-                        <p class="text text-end">16 JAN 2023</p>
+                    </div>
+                    <div class="card-body">
+                      <div class="row">
+                        <div class="col-md-4 col-12">
+                          <img
+                            src="../assets/img/icons/byuer-leads/medical.png"
+                            class="img-fluid"
+                            alt=""
+                          />
+                          <p class="country">
+                            Buyer <br />
+                            From China
+                          </p>
+                        </div>
+                        <div class="col-md-4 col-6">
+                          <ul>
+                            <li class="heading">Product Name:</li>
+                            <li class="heading">Quantity:</li>
+                            <li class="heading">Payment:</li>
+                            <li class="heading">Destination:</li>
+                          </ul>
+                        </div>
+                        <div class="col-md-4 col-6">
+                          <ul>
+                            <li>Icumsa45 -</li>
+                            <li>MOQ -</li>
+                            <li>LC</li>
+                            <li>Guangxi, China</li>
+                          </ul>
+                        </div>
                       </div>
                     </div>
                   </div>
-                  <div class="card-body">
-                    <div class="row">
-                      <div class="col-md-4">
-                        <img
-                          src="../assets/img/icons/byuer-leads/medical.png"
-                          class="img-fluid"
-                          alt=""
-                        />
-                        <p class="country">
-                          Buyer <br />
-                          From China
-                        </p>
+                </a>
+              </div>
+            </div>
+
+            <div class="col-lg-4">
+              <div class="buyer-wraper">
+                <a href="">
+                  <div class="card">
+                    <div class="card-header">
+                      <div class="row">
+                        <div class="col">
+                          <p class="text">ICUMSA 45 SUGAR</p>
+                        </div>
+                        <div class="col">
+                          <p class="text text-end">16 JAN 2023</p>
+                        </div>
                       </div>
-                      <div class="col-md-4">
-                        <ul>
-                          <li class="heading">Product Name:</li>
-                          <li class="heading">Quantity:</li>
-                          <li class="heading">Payment:</li>
-                          <li class="heading">Destination:</li>
-                        </ul>
-                      </div>
-                      <div class="col-md-4">
-                        <ul>
-                          <li>Icumsa45 -</li>
-                          <li>MOQ -</li>
-                          <li>LC</li>
-                          <li>Guangxi, China</li>
-                        </ul>
+                    </div>
+                    <div class="card-body">
+                      <div class="row">
+                        <div class="col-md-4 col-12">
+                          <img
+                            src="../assets/img/icons/byuer-leads/medical.png"
+                            class="img-fluid"
+                            alt=""
+                          />
+                          <p class="country">
+                            Buyer <br />
+                            From China
+                          </p>
+                        </div>
+                        <div class="col-md-4 col-6">
+                          <ul>
+                            <li class="heading">Product Name:</li>
+                            <li class="heading">Quantity:</li>
+                            <li class="heading">Payment:</li>
+                            <li class="heading">Destination:</li>
+                          </ul>
+                        </div>
+                        <div class="col-md-4 col-6">
+                          <ul>
+                            <li>Icumsa45 -</li>
+                            <li>MOQ -</li>
+                            <li>LC</li>
+                            <li>Guangxi, China</li>
+                          </ul>
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
-              </a>
+                </a>
+              </div>
+            </div>
+
+            <div class="col-lg-4">
+              <div class="buyer-wraper">
+                <a href="">
+                  <div class="card">
+                    <div class="card-header">
+                      <div class="row">
+                        <div class="col">
+                          <p class="text">ICUMSA 45 SUGAR</p>
+                        </div>
+                        <div class="col">
+                          <p class="text text-end">16 JAN 2023</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card-body">
+                      <div class="row">
+                        <div class="col-md-4 col-12">
+                          <img
+                            src="../assets/img/icons/byuer-leads/medical.png"
+                            class="img-fluid"
+                            alt=""
+                          />
+                          <p class="country">
+                            Buyer <br />
+                            From China
+                          </p>
+                        </div>
+                        <div class="col-md-4 col-6">
+                          <ul>
+                            <li class="heading">Product Name:</li>
+                            <li class="heading">Quantity:</li>
+                            <li class="heading">Payment:</li>
+                            <li class="heading">Destination:</li>
+                          </ul>
+                        </div>
+                        <div class="col-md-4 col-6">
+                          <ul>
+                            <li>Icumsa45 -</li>
+                            <li>MOQ -</li>
+                            <li>LC</li>
+                            <li>Guangxi, China</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
             </div>
           </div>
         </div>
+
+        <div class="latest-bye-leads-mobile">
+            <div class="accordion mobile-view">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="heading-wrap">
+                      <h1 class="main-heading">Latest Buy Leads</h1>
+                      <button class="btn mobile-btn">See All</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item" v-for="(item, index) in items" :key="index">
+                  <div class="accordion-title" @click="toggleItem(index)"
+                    v-bind:class="active === index ? 'active' : ''">
+                    <div class="row">
+                      <div class="col-2 d-flex align-items-center justify-content-center">
+                        <img src="../assets/img/icons/byuer-leads/medical-mobile.png" alt="" class="img-fluid"> 
+                      </div>
+                      <div class="col-9">
+                        <span class="text">ICUMSA 45 SUGAR</span> <br>
+                        <span class="text">16 JAN 2023</span>
+                      </div>               
+                      <div class="col-1 d-flex align-items-center justify-content-center">
+                        <i class="fa-solid fa-chevron-down"></i>
+                      </div>       
+                    </div>
+                  </div>
+                  <div class="accordion-content"
+                    v-bind:class="active === index ? 'active contentArea' : 'contentArea'">
+                    <div class="row">
+                      <div class="col-4 d-flex align-items-center justify-content-center">
+                        <div class="buyer-from">
+                          <h1 class="heading">Buyer From</h1>
+                          <span class="country">China</span>
+                        </div>
+                      </div>
+                      <div class="col-8">
+                        <ul class="list">
+                          <li>Product Name: Icumsa45 -</li>    
+                          <li>Quantity: MOQ -</li>    
+                          <li>Payment: LC</li>    
+                          <li>Destination: Guangxi, China</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
       </div>
+
 
       <div class="form sub-space form-section">
         <div class="row">
@@ -410,13 +469,8 @@
                   </div>
                   <div class="col-lg-6">
                     <div class="field-wrapper number">
-                      <label>Enter Mobile</label>
-                      <input
-                        name="phone"
-                        type="text"
-                        class="text-field-input"
-                        id="phoneTwo"
-                      />
+                      <label>Enter Phone Number</label>
+                      <vue-tel-input></vue-tel-input>
                     </div>
                   </div>
                   <div class="col-lg-6">
@@ -503,7 +557,7 @@
         </div>
       </div>
 
-      <div class="row sub-space">
+      <div class="row gy-3 sub-space">
         <div class="col-lg-6">
           <h1 class="main-heading">HOW TO SELL ON VIETNAME FACTORY</h1>
         </div>
@@ -639,6 +693,7 @@
             </div>
           </div>
         </div>
+
         <div class="col-lg-4">
           <div class="categorie-wrap">
             <a href="" class="sub-heading">INDUSTRIAL PRODUCTS</a>
@@ -750,7 +805,7 @@
           <h1 class="main-heading">OUR SUPPLIERS</h1>
         </div>
         <div class="row border-bottom mx-0">
-          <div class="col-lg-2 col-md-4 col-6">
+          <div class="col-lg-2 col-md-4 col-4">
             <div class="product-wrap">
               <img
                 src="../assets/img/logos/suppliers-logos/L1.jpg"
@@ -759,7 +814,7 @@
               />
             </div>
           </div>
-          <div class="col-lg-2 col-md-4 col-6">
+          <div class="col-lg-2 col-md-4 col-4">
             <div class="product-wrap">
               <img
                 src="../assets/img/logos/suppliers-logos/L2.jpg"
@@ -768,7 +823,7 @@
               />
             </div>
           </div>
-          <div class="col-lg-2 col-md-4 col-6">
+          <div class="col-lg-2 col-md-4 col-4">
             <div class="product-wrap">
               <img
                 src="../assets/img/logos/suppliers-logos/L3.jpg"
@@ -777,7 +832,7 @@
               />
             </div>
           </div>
-          <div class="col-lg-2 col-md-4 col-6">
+          <div class="col-lg-2 col-md-4 col-4">
             <div class="product-wrap">
               <img
                 src="../assets/img/logos/suppliers-logos/L4.jpg"
@@ -786,7 +841,7 @@
               />
             </div>
           </div>
-          <div class="col-lg-2 col-md-4 col-6">
+          <div class="col-lg-2 col-md-4 col-4">
             <div class="product-wrap">
               <img
                 src="../assets/img/logos/suppliers-logos/L5.jpg"
@@ -795,7 +850,7 @@
               />
             </div>
           </div>
-          <div class="col-lg-2 col-md-4 col-6">
+          <div class="col-lg-2 col-md-4 col-4">
             <div class="product-wrap">
               <img
                 src="../assets/img/logos/suppliers-logos/L6.jpg"
@@ -806,7 +861,7 @@
           </div>
         </div>
         <div class="row mx-0">
-          <div class="col-lg-2 col-md-4 col-6">
+          <div class="col-lg-2 col-md-4 col-4">
             <div class="product-wrap">
               <img
                 src="../assets/img/logos/suppliers-logos/L7.jpg"
@@ -815,7 +870,7 @@
               />
             </div>
           </div>
-          <div class="col-lg-2 col-md-4 col-6">
+          <div class="col-lg-2 col-md-4 col-4">
             <div class="product-wrap">
               <img
                 src="../assets/img/logos/suppliers-logos/L8.jpg"
@@ -824,7 +879,7 @@
               />
             </div>
           </div>
-          <div class="col-lg-2 col-md-4 col-6">
+          <div class="col-lg-2 col-md-4 col-4">
             <div class="product-wrap">
               <img
                 src="../assets/img/logos/suppliers-logos/L7.jpg"
@@ -833,7 +888,7 @@
               />
             </div>
           </div>
-          <div class="col-lg-2 col-md-4 col-6">
+          <div class="col-lg-2 col-md-4 col-4">
             <div class="product-wrap">
               <img
                 src="../assets/img/logos/suppliers-logos/L9.jpg"
@@ -842,7 +897,7 @@
               />
             </div>
           </div>
-          <div class="col-lg-2 col-md-4 col-6">
+          <div class="col-lg-2 col-md-4 col-4">
             <div class="product-wrap">
               <img
                 src="../assets/img/logos/suppliers-logos/L10.jpg"
@@ -851,7 +906,7 @@
               />
             </div>
           </div>
-          <div class="col-lg-2 col-md-4 col-6">
+          <div class="col-lg-2 col-md-4 col-4">
             <div class="product-wrap">
               <img
                 src="../assets/img/logos/suppliers-logos/L11.jpg"
@@ -866,3 +921,39 @@
   </section>
   <!-- end -->
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      active: "",
+      items: [
+        {
+          title: "",
+          content: [""],
+          isActive: false,
+        },
+        {
+          title: "",
+          content: [""],
+          isActive: false,
+        },
+        {
+          title: "",
+          content: [""],
+          isActive: false,
+        },
+      ],
+    };
+  },
+  methods: {
+    toggleItem(index) {
+      if (this.active === index) {
+        this.active = null;
+      } else {
+        this.active = index;
+      }
+    },
+  },
+};
+</script>

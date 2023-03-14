@@ -113,54 +113,54 @@
                         <a href="">
                             <div class="product-wrap">
                                 <img src="../assets/img/icons/byuer-leads/medical.png" class="img-fluid" alt="">
-                                <span class="product-name">Medical</span>
                             </div>
                         </a>
+                        <span class="product-name">Medical</span>
                     </li>
                     <li class="item">
                         <a href="">
                             <div class="product-wrap">
                                 <img src="../assets/img/icons/byuer-leads/food.png" class="img-fluid" alt="">
-                                <span class="product-name">Food</span>
                             </div>
+                            <span class="product-name">Food</span>
                         </a>
                     </li>
                     <li class="item">
                         <a href="">
                             <div class="product-wrap">
                                 <img src="../assets/img/icons/byuer-leads/industrial.png" class="img-fluid" alt="">
-                                <span class="product-name">Industrial</span>
                             </div>
+                            <span class="product-name">Industrial</span>
                         </a>
                     </li>
                     <li class="item">
                         <a href="">
                             <div class="product-wrap">
                                 <img src="../assets/img/icons/byuer-leads/fashion.png" class="img-fluid" alt="">
-                                <span class="product-name">Fashion</span>
                             </div>
+                            <span class="product-name">Fashion</span>
                         </a>
                     </li>
                     <li class="item">
                         <a href="">
                             <div class="product-wrap">
                                 <img src="../assets/img/icons/byuer-leads/cosmetic.png" class="img-fluid" alt="">
-                                <span class="product-name">Cosmetic</span>
                             </div>
+                            <span class="product-name">Cosmetic</span>
                         </a>
                     </li>
                     <li class="item">
                         <a href="">
                             <div class="product-wrap">
                                 <img src="../assets/img/icons/byuer-leads/furniture.png" class="img-fluid" alt="">
-                                <span class="product-name">Furniture</span>
                             </div>
+                            <span class="product-name">Furniture</span>
                         </a>
                     </li>
                 </ul>                
             </div>
 
-            <div class="row flex-nowrap justify-content-center">
+            <div class="row">
                 <div class="col">
                     <div class="box-wraper">
                         <div class="icons-box">
