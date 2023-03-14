@@ -586,68 +586,75 @@
 
 
 .sell-wrap {
-	padding: 15px 10px;
-	position: relative;
-	z-index: 99;
-	height: 100%;
+    padding: 15px 10px;
+    position: relative;
+    z-index: 99;
+    height: 100%;
 
-	.text {
-		margin: 0;
-		font-size: 18px;
-		font-weight: 500;
-		color: $color_1;
-	}
+    .text {
+        margin: 0;
+        font-size: 18px;
+        font-weight: 500;
+        color: #000;
+    }
 
-	.heading {
-		font-size: 18px;
-		font-weight: 600;
-		text-transform: uppercase;
-		margin-bottom: 18px;
-	}
+    .heading {
+        font-size: 18px;
+        font-weight: 600;
+        text-transform: uppercase;
+        margin-bottom: 18px;
+    }
 
-	.list {
-		margin: 0;
+    .list {
+        margin: 0;
 
-		li {
-			position: relative;
-			margin: 0;
-			font-size: 16px;
-			color: $color_1;
+        li {
+            position: relative;
+            margin: 0;
+            font-size: 16px;
+            color: #000;
 
-			&::before {
-				content: url(../img/icons/tick.png);
-				position: relative;
-				padding-right: 10px;
-			}
-		}
-	}
-}
+            &::before {
+                content: url(../img/icons/tick.png);
+                position: relative;
+                padding-right: 10px;
+            }
+        }
+    }
 
-.sell-wrap.odd {
-	background-color: $background-color_9;
+    &::after {
+        content: "";
+        width: 70px;
+        height: 70px;
+        position: absolute;
+        z-index: -1;
+        right: -5px;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        transform: rotate(45deg);
+    }
 
-	&::after {
-		content: "";
-		width: 70px;
-		height: 70px;
-		position: absolute;
-		z-index: -1;
-		right: -5px;
-		top: 0;
-		bottom: 0;
-		margin: auto;
-		background-color: $background-color_9;
-		transform: rotate(45deg);
-	}
-}
+    &.odd {
+        background-color: $color_6;
 
-.sell-wrap.even {
-	background-color: $background-color_1;
+        &::after {
+            background-color: $color_6;
+        }
+    }
 
-	img {
-		box-shadow: 4px 0px 28px 3px rgba(0, 0, 0, 0.1);
-		border-radius: 50%;
-	}
+    &.even {
+        background-color: #fff;
+
+        &::after {
+            background-color: #fff;
+        }
+
+        img {
+            box-shadow: 4px 0px 28px 3px rgb(0 0 0 / 10%);
+            border-radius: 50%;
+        }
+    }
 }
 
 .categorie-wrap {

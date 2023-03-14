@@ -111,35 +111,13 @@
           </div>
         </div>
       </div>
-
-      <div class="go-to-top">
-        <div class="whatsapp">
-          <a href=""><img src="../../assets/img/icons/whatsapp.png" alt="" class="img-fluid" /></a>
-        </div>
-        <a href="#top">
-          <div class="sticky-wraper">
-            <i class="fa-solid fa-up-long"></i>
-          </div>
-        </a>
-        <span class="text">TOP</span>
-      </div>
-
-      <div class="pop-cta">
-        <button
-          type="button"
-          class="btn-primary"
-          data-bs-toggle="modal"
-          data-bs-target="#staticBackdrop"
-        >
-          Get Best Price
-        </button>
-      </div>
     </footer>
 
     <div class="go-to-top">
       <div class="whatsapp">
-        <a href=""><img src="../assets/img/icons/whatsapp.png" alt="" class="img-fluid" /></a>
+        <a href=""><img src="../../assets/img/icons/whatsapp.png" alt="" class="img-fluid" /></a>
       </div>
+
       <a href="#top">
         <div class="sticky-wraper">
           <i class="fa-solid fa-up-long"></i>
