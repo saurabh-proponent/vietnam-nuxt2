@@ -26,5 +26,21 @@ Vue.use(VueTelInput);
 export default {
   name: "IndexPage",
   components: { Mainbanner, CategoryProducts, RequirementEnqury, BuyerCategories, CustomerReviews, },
+  methods: {
+    async getUser() {
+      try {
+        const res = await this.$axios.get('https://devadmin.vietnamfactoryb2b.com/api/categories')
+        console.log(res)
+      } catch (e) {
+        console.log(e)
+      }
+    },
+  },
+  mounted() {
+    this.getUser()
+  }
+
+
+
 };
 </script>
