@@ -26,13 +26,8 @@
                       </div>
                       <div class="col-lg-6">
                         <div class="field-wrapper number">
-                          <label>Enter Mobile</label>
-                          <input
-                            name="phone"
-                            type="text"
-                            class="text-field-input"
-                            id="phoneOne"
-                          />
+                          <label>Enter Phone Number</label>
+                          <vue-tel-input></vue-tel-input>
                         </div>
                       </div>
                       <div class="col-lg-6">
@@ -154,7 +149,6 @@
             </div>
           </div>
         </div>
-        
       </div>
     </div>
   </section>
