@@ -434,7 +434,7 @@
           </div>
         </div>
       </div>
-
+      <!-- all categories start  -->
       <div class="row sub-space">
         <div class="col-lg-12">
           <h1 class="main-heading">ALL CATEGORIES</h1>
@@ -442,19 +442,19 @@
 
         <div class="col-lg-4" v-for="(item, index) in categories.slice(0, 6)" :key="index">
           <div class="categorie-wrap">
-            <a href="" class="sub-heading">{{ item.title }}</a>
+            <nuxt-link class="sub-heading" :to="item.slug">{{ item.title }}</nuxt-link>
             <hr />
             <div class="row">
               <div class="col-md-7">
                 <ul>
-                  <li v-for="(sc, index) in item.children.slice(0, 6)" :key="index"><nuxt-link to="/">{{ sc.title
-                  }}</nuxt-link></li>
+                  <li v-for="(sc, index) in item.children.slice(0, 6)" :key="index"><nuxt-link :to="sc.slug">{{
+                    sc.title }}</nuxt-link></li>
                 </ul>
               </div>
               <div class="col-md-5">
                 <ul>
-                  <li v-for="(sc, index) in item.children.slice(0, 6)" :key="index"><nuxt-link to="/">{{ sc.title
-                  }}</nuxt-link></li>
+                  <li v-for="(sc, index) in item.children.slice(0, 6)" :key="index"><nuxt-link :to="sc.slug">{{
+                    sc.title }}</nuxt-link></li>
                 </ul>
               </div>
             </div>
@@ -462,6 +462,7 @@
         </div>
 
       </div>
+      <!-- all categories end  -->
 
       <div class="our-suppliers">
         <div class="col-lg-12">
