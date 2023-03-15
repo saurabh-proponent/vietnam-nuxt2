@@ -1,11 +1,14 @@
 
 <template>
- <header class="header">
+    <header class="header">
         <div class="top-header">
             <div class="container-fluid">
                 <div class="row d-flex align-items-center">
                     <div class="col-lg-3">
-                        <a class="navbar-brand" href="#"><img src="../../assets/img/logos/logo.svg" class="img-fluid logo" alt=""></a>
+                        <nuxt-link to="/" class="navbar-brand">
+                            <img src="../../assets/img/logos/logo.svg" class="img-fluid logo" alt="">
+                        </nuxt-link>
+
                     </div>
                     <div class="col-lg-5">
                         <form class="d-flex" role="search">
@@ -13,9 +16,11 @@
                                 <option value="">Product</option>
                                 <option value="">Buy Lead</option>
                             </select>
-                            <input class="form-control" type="search" placeholder="what you are looking for" aria-label="Search">
-                            <button class="search-btn" type="submit"><i class="fa fa-search"></i> <span>Search</span></button>
-                          </form>
+                            <input class="form-control" type="search" placeholder="what you are looking for"
+                                aria-label="Search">
+                            <button class="search-btn" type="submit"><i class="fa fa-search"></i>
+                                <span>Search</span></button>
+                        </form>
                     </div>
                     <div class="col-lg-4">
                         <ul class="top-list">
@@ -50,7 +55,8 @@
                                 </button>
 
                                 <div id="sign-form" class="form">
-                                    <button type="button" class="sign-in btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    <button type="button" class="sign-in btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
                                     <form class="contact-form">
                                         <div class="field-wrapper">
                                             <label>E-mail Address</label>
@@ -68,7 +74,7 @@
                                             <a href="">Forget your password?</a>
                                         </div>
                                         <div class="btn-wraper mb-3">
-                                          <button type="submit" class="btn-primary"> LOG IN</button>
+                                            <button type="submit" class="btn-primary"> LOG IN</button>
                                         </div>
                                         <div class="not-sign">
                                             <p>Not Signed up Yet?</p>
@@ -84,25 +90,28 @@
         </div>
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
                     <span class="hamburger">
-                      <span class="bar"></span>
-                      <span class="bar"></span>
-                      <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
                     </span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav">
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle p-0" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle p-0" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
                             </a>
                             <ul class="dropdown-menu">
-                              <li><a href="" class="dropdown-item">Medical Supplies</a></li>
-                              <li><a href="" class="dropdown-item">Food & Agriculture</a></li>
-                              <li><a href="" class="dropdown-item">Industrial Products</a></li>
-                              <li><a href="" class="dropdown-item">Fashion Accessories</a></li>
-                              <li><a href="" class="dropdown-item">Cosmetic & Personal Care</a></li>
-                              <li><a href="" class="dropdown-item">Furniture & Home Appliance</a></li>
+                                <li><a href="" class="dropdown-item">Medical Supplies</a></li>
+                                <li><a href="" class="dropdown-item">Food & Agriculture</a></li>
+                                <li><a href="" class="dropdown-item">Industrial Products</a></li>
+                                <li><a href="" class="dropdown-item">Fashion Accessories</a></li>
+                                <li><a href="" class="dropdown-item">Cosmetic & Personal Care</a></li>
+                                <li><a href="" class="dropdown-item">Furniture & Home Appliance</a></li>
                             </ul>
                         </li>
                         <li class="nav-item">
@@ -131,9 +140,12 @@
                         <li class="list-item">
                             <ul class="social-handle">
                                 <li class="nav-item">Follow us on</li>
-                                <li class="nav-item"><a href="" class="nav-link"><i class="fa-brands fa-facebook-f"></i></a></li>
-                                <li class="nav-item"><a href="" class="nav-link"><i class="fa-brands fa-instagram"></i></a></li>
-                                <li class="nav-item"><a href="" class="nav-link"><i class="fa-brands fa-twitter"></i></a></li>
+                                <li class="nav-item"><a href="" class="nav-link"><i class="fa-brands fa-facebook-f"></i></a>
+                                </li>
+                                <li class="nav-item"><a href="" class="nav-link"><i class="fa-brands fa-instagram"></i></a>
+                                </li>
+                                <li class="nav-item"><a href="" class="nav-link"><i class="fa-brands fa-twitter"></i></a>
+                                </li>
                             </ul>
                         </li>
                     </ul>
@@ -155,7 +167,7 @@
 
 export default {
     name: "TheHeader",
-    components: {  },
+    components: {},
 };
 </script>
 
@@ -163,8 +175,6 @@ export default {
 
 
 
-<style scoped>
-
-</style>
+<style scoped></style>
 
 

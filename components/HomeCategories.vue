@@ -6,19 +6,17 @@
           <div class="callto-action">
             <div class="row">
               <div class="col-lg-6">
-                <nuxt-link to="/">
-                  <h1 class="main-heading">{{ category.title }}</h1>
-                </nuxt-link>
+              <nuxt-link :to="category.slug">
+                <h1 class="main-heading">{{ category.title }}</h1>
+              </nuxt-link>
               </div>
               <div class="col-lg-6">
-              <nuxt-link to="/" class="cta-link">
-               VIEW ALL <i class="fa-solid fa-angles-right"></i>
-              </nuxt-link>
+                <nuxt-link :to="category.slug" class="cta-link">VIEW ALL <i class="fa-solid fa-angles-right"></i></nuxt-link>
               </div>
               <div class="col-lg-3 p-0">
                 <div class="left-wraper">
                   <img :src="category.image" class="img-fluid hot-sale-img" alt="" />
-                  <nuxt-link to="/">
+                  <nuxt-link :to="category.slug">
                   <button class="btn-primary">VIEW ALL</button>
                   </nuxt-link>
                 </div>
