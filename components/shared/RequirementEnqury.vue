@@ -76,7 +76,7 @@
                       <div class="card-wrap dotted-animation">
                         <div class="icon">
                           <img
-                            src="../assets/img/contact/icon-1.png"
+                            src="../../assets/img/contact/icon-1.png"
                             alt=""
                             class="img-fluid"
                           />
@@ -89,7 +89,7 @@
                       <div class="card-wrap dotted-animation">
                         <div class="icon">
                           <img
-                            src="../assets/img/contact/icon-2.png"
+                            src="../../assets/img/contact/icon-2.png"
                             alt=""
                             class="img-fluid"
                           />
@@ -102,7 +102,7 @@
                       <div class="card-wrap">
                         <div class="icon">
                           <img
-                            src="../assets/img/contact/icon-3.png"
+                            src="../../assets/img/contact/icon-3.png"
                             alt=""
                             class="img-fluid"
                           />

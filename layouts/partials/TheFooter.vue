@@ -99,11 +99,7 @@
         <div class="footer-bottom">
           <div class="row">
             <div class="col-lg-6">
-              <img
-                src="../../assets/img/logos/footer-logo.png"
-                alt=""
-                class="img-fluid footer-logo"
-              />
+              <img src="../../assets/img/logos/footer-logo.png" alt="" class="img-fluid footer-logo" />
             </div>
             <div class="col-lg-6">
               <span class="copyright-text">© 2023 Vietnam Factory.</span>
@@ -129,11 +125,12 @@
     <div class="pop-cta">
       <button type="button" class="btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
         Get Best Price
-      </button>      
+      </button>
     </div>
 
     <!-- Modal -->
-    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+      aria-labelledby="staticBackdropLabel" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
@@ -164,7 +161,7 @@
                 <div class="col-lg-6">
                   <div class="field-wrapper">
                     <label>Enter Email</label>
-                    <input type="email" name="email" id="email" class="text-field-input"/>
+                    <input type="email" name="email" id="email" class="text-field-input" />
                   </div>
                 </div>
                 <div class="col-lg-12">
@@ -211,9 +208,16 @@
     </footer>
   </div>
 </template>
+
+
 <script>
+
+import { mapActions } from 'vuex';
+
 export default {
-    name: "TheFooter",
-    components: {  },
+  name: "TheFooter",
+  components: {},
+  
+
 };
 </script>
