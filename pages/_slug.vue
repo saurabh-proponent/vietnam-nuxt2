@@ -1,6 +1,9 @@
 <template>
     <div class="slugPage">
-        <h1> Page Comming Soon</h1>
+        <div>
+            <h1> Page Comming Soon</h1>
+            <nuxt-link to="/"> Go Back <i class="fa-solid fa-angles-right"></i></nuxt-link>
+        </div>
     </div>
 </template>
 
