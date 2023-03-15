@@ -37,11 +37,11 @@ export default {
   data() {
     return {
       isLoaded: false,
-      categories: []
+      categories:[]
     }
   },
   methods: {
-    // ...mapActions('categories', ['fetchCategories']),
+    ...mapActions('categories', ['fetchCategories']),
     async getCategory() {
       try {
         const res = await this.$axios.get('/categories')
@@ -49,7 +49,6 @@ export default {
           this.isLoaded = true
           this.categories = res.data.categories
           console.log(res.data.categories)
-
         }
 
       } catch (e) {
@@ -58,14 +57,20 @@ export default {
     },
   },
   mounted() {
-    this.getCategory()
     this.$nextTick(() => {
       this.$nuxt.$loading.start()
       setTimeout(() => this.$nuxt.$loading.finish(), 500)
     })
-  }
+    console.log("page store",this.$store.state.categories)
 
+  },
+  async created() {
+    this.getCategory()
+    await this.fetchCategories()
+
+  }
 
 
 };
 </script>
+
