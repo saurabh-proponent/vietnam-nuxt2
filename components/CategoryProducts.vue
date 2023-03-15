@@ -18,124 +18,34 @@
                 </div>
               </div>
 
-
-
-
-
-
               <div class="col-lg-9">
                 <div class="row border-bottom">
-
                   <!-- dynamic        -->
-                  <div class="col-md-2" v-for="(item, index) in category.children" :key="index">
-                    <a href="">
+                  <div class="col" v-for="(item, index) in category.children.slice(0, 5)" :key="index">
+                    <NuxtLink to="/">
                       <div class="card">
                         <img :src="item.image" class="img-fluid" alt="" />
                         <h5 class="heading">{{ item.title }}</h5>
                       </div>
-                    </a>
+                    </NuxtLink>
                   </div>
                   <!-- dynamic end       -->
-                  <!-- 
-                  <div class="col">
-                    <a href="">
-                      <div class="card">
-                        <img src="../assets/img/hot-sales/medical-supplies/bloodbank.jpg" class="img-fluid" alt="" />
-                        <h5 class="heading">Blood Bank</h5>
-                      </div>
-                    </a>
-                  </div>
 
-
-                  <div class="col">
-                    <a href="">
-                      <div class="card">
-                        <img src="../assets/img/hot-sales/medical-supplies/growns.jpg" class="img-fluid" alt="" />
-                        <h5 class="heading">Growns</h5>
-                      </div>
-                    </a>
-                  </div>
-
-
-                  <div class="col">
-                    <a href="">
-                      <div class="card">
-                        <img src="../assets/img/hot-sales/medical-supplies/ivcatheter.jpg" class="img-fluid" alt="" />
-                        <h5 class="heading">IV Catheter</h5>
-                      </div>
-                    </a>
-                  </div>
-
-
-                  <div class="col">
-                    <a href="">
-                      <div class="card">
-                        <img src="../assets/img/hot-sales/medical-supplies/medical-gloves.jpg" class="img-fluid" alt="" />
-                        <h5 class="heading">Medical Gloves</h5>
-                      </div>
-                    </a>
-                  </div> -->
                 </div>
 
-
-                <!--   
-
-                  <div class="row">
-
-
-                    <div class="col">
-                      <a href="">
-                        <div class="card">
-                          <img src="../assets/img/hot-sales/medical-supplies/eye-drops.jpg" class="img-fluid" alt="" />
-                          <h5 class="heading">Eye Drops</h5>
-                        </div>
-                      </a>
-                    </div>
-                    <div class="col">
-                      <a href="">
-                        <div class="card">
-                          <img src="../assets/img/hot-sales/medical-supplies/face-shield.jpg" class="img-fluid" alt="" />
-                          <h5 class="heading">Face Shield</h5>
-                        </div>
-                      </a>
-                    </div>
-                    <div class="col">
-                      <a href="">
-                        <div class="card">
-                          <img src="../assets/img/hot-sales/medical-supplies/hand-senitizer.jpg" class="img-fluid" alt="" />
-                          <h5 class="heading">Hand Senitizer</h5>
-                        </div>
-                      </a>
-                    </div>
-                    <div class="col">
-                      <a href="">
-                        <div class="card">
-                          <img src="../assets/img/hot-sales/medical-supplies/masks.jpg" class="img-fluid" alt="" />
-                          <h5 class="heading">Masks</h5>
-                        </div>
-                      </a>
-                    </div>
-                    <div class="col">
-                      <a href="">
-                        <div class="card">
-                          <img src="../assets/img/hot-sales/medical-supplies/cotton.jpg" class="img-fluid" alt="" />
-                          <h5 class="heading">Cotton</h5>
-                        </div>
-                      </a>
-                    </div>
-
-
-                    
-                  </div>  -->
-
-
-
+                <div class="row">
+                  <!-- dynamic        -->
+                  <div class="col" v-for="(item, index) in category.children.slice(5, 10)" :key="index">
+                    <NuxtLink to="/">
+                      <div class="card">
+                        <img :src="item.image" class="img-fluid" alt="" />
+                        <h5 class="heading">{{ item.title }}</h5>
+                      </div>
+                    </NuxtLink>
+                  </div>
+                  <!-- dynamic end       -->
+                </div>
               </div>
-
-
-
-
-
 
             </div>
           </div>
@@ -211,7 +121,7 @@ export default {
     },
   },
   mounted() {
-    console.log("category Page +++++++++++++++++++", this.category)
+    
   }
 
 

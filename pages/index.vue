@@ -1,6 +1,6 @@
 <template  >
   <div v-if="isLoaded">
-    <Mainbanner />
+    <Mainbanner :category="categories" />
 
     <!-- medical suplies -->
     <CategoryProducts :category="categories[0]" />
