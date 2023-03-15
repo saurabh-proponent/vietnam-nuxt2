@@ -33,6 +33,19 @@ Vue.use(VueTelInput);
 export default {
   name: "IndexPage",
   components: { Mainbanner, HomeCategories, RequirementEnqury, BuyerCategories, CustomerReviews, },
+  head() {
+    return {
+      title: 'VietnamFactoryb2b.com | Vietnam To The World',
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: 'We offer vietnam to the world.'
+        },
+       
+      ]
+    };
+  },
   data() {
     return {
       isLoaded: false,
