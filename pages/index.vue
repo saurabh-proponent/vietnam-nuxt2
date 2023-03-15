@@ -7,7 +7,6 @@
     <RequirementEnqury />
     <HomeCategories :category="categories[1]" />
     <HomeCategories :category="categories[2]" />
-
     <BuyerCategories :categories="categories" />
     <CustomerReviews />
     <RequirementEnqury />
