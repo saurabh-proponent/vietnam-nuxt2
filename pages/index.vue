@@ -3,10 +3,10 @@
     <Mainbanner :category="categories" />
 
     <!-- medical suplies -->
-    <CategoryProducts :category="categories[0]" />
+    <HomeCategories :category="categories[0]" />
     <RequirementEnqury />
-    <CategoryProducts :category="categories[1]" />
-    <CategoryProducts :category="categories[2]" />
+    <HomeCategories :category="categories[1]" />
+    <HomeCategories :category="categories[2]" />
 
     <BuyerCategories />
     <CustomerReviews />
@@ -21,8 +21,8 @@
 import { mapActions, mapState } from "vuex";
 
 import Mainbanner from "../components/Mainbanner.vue";
-import CategoryProducts from "../components/CategoryProducts.vue";
-import RequirementEnqury from "../components/RequirementEnqury.vue";
+import HomeCategories from "../components/HomeCategories.vue";
+import RequirementEnqury from "../components/shared/RequirementEnqury.vue";
 import BuyerCategories from "../components/BuyerCategories.vue";
 import CustomerReviews from "../components/CustomerReviews.vue";
 import Vue from 'vue';
@@ -33,7 +33,7 @@ Vue.use(VueTelInput);
 
 export default {
   name: "IndexPage",
-  components: { Mainbanner, CategoryProducts, RequirementEnqury, BuyerCategories, CustomerReviews, },
+  components: { Mainbanner, HomeCategories, RequirementEnqury, BuyerCategories, CustomerReviews, },
   data() {
     return {
       isLoaded: false,

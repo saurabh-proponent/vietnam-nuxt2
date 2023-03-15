@@ -179,8 +179,10 @@
 
 <script>
 
-
+import MainCategoyBox from './shared/MainCategoyBox.vue';
 export default {
+    name: "Mainbanner",
+    components: {MainCategoyBox},
     props: ["category"],
     data() {
         return {
