@@ -1,10 +1,13 @@
 <template  >
   <div v-if="isLoaded">
     <Mainbanner />
-    <CategoryProducts />
+
+    <!-- medical suplies -->
+    <CategoryProducts :category="categories[0]" />
     <RequirementEnqury />
-    <CategoryProducts />
-    <CategoryProducts />
+    <CategoryProducts :category="categories[1]" />
+    <CategoryProducts :category="categories[2]" />
+
     <BuyerCategories />
     <CustomerReviews />
     <RequirementEnqury />
@@ -33,17 +36,19 @@ export default {
   components: { Mainbanner, CategoryProducts, RequirementEnqury, BuyerCategories, CustomerReviews, },
   data() {
     return {
-      isLoaded: false
+      isLoaded: false,
+      categories: []
     }
   },
   methods: {
-    ...mapActions('categories', ['fetchCategories']),
+    // ...mapActions('categories', ['fetchCategories']),
     async getCategory() {
       try {
         const res = await this.$axios.get('/categories')
         if (res.data) {
           this.isLoaded = true
-          console.log(res)
+          this.categories = res.data.categories
+          console.log(res.data.categories)
 
         }
 
