@@ -6,15 +6,21 @@
           <div class="callto-action">
             <div class="row">
               <div class="col-lg-6">
-                <h1 class="main-heading">{{ category.title }}</h1>
+                <nuxt-link to="/">
+                  <h1 class="main-heading">{{ category.title }}</h1>
+                </nuxt-link>
               </div>
               <div class="col-lg-6">
-                <a href="" class="cta-link">VIEW ALL <i class="fa-solid fa-angles-right"></i></a>
+              <nuxt-link to="/" class="cta-link">
+               VIEW ALL <i class="fa-solid fa-angles-right"></i>
+              </nuxt-link>
               </div>
               <div class="col-lg-3 p-0">
                 <div class="left-wraper">
                   <img :src="category.image" class="img-fluid hot-sale-img" alt="" />
+                  <nuxt-link to="/">
                   <button class="btn-primary">VIEW ALL</button>
+                  </nuxt-link>
                 </div>
               </div>
 
@@ -121,7 +127,7 @@ export default {
     },
   },
   mounted() {
-    
+
   }
 
 
