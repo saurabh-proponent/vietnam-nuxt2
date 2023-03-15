@@ -1,19 +1,15 @@
 <template>
-
-<div class="row">
-        <div class="col-lg-2 col-6">
-            <a href="">
-              <div class="all-buyer-wrap">
-                <img
-                  src="../../assets/img/icons/byuer-leads/medical.png"
-                  class="img-fluid"
-                  alt=""
-                />
-                <span class="product-name">Medical Supplies</span>
-              </div>
-            </a>
-          </div>
-          <div class="col-lg-2 col-6">
+  <div class="row">
+    <div class="col-lg-2 col-6" v-for="(item, index) in categories.slice(0, 6)" :key="index">
+      <nuxt-link to="/">
+        <div class="all-buyer-wrap">
+          <img :src="item.image" class="img-fluid" alt="" />
+          <span class="product-name">{{ item.title }}</span>
+        </div>
+      </nuxt-link>
+    </div>
+    <!-- ../../assets/img/icons/byuer-leads/medical.png -->
+    <!-- <div class="col-lg-2 col-6">
             <a href="">
               <div class="all-buyer-wrap">
                 <img
@@ -72,17 +68,15 @@
                 <span class="product-name">Furniture & Appliance</span>
               </div>
             </a>
-          </div>
-        </div>
-
+          </div> -->
+  </div>
 </template>
 
 <script>
-    export default {
-        name:"MainCategoryBox"
-    }
+export default {
+  name: "MainCategoryBox",
+  props: ["categories"]
+}
 </script>
 
-<style lang="scss" scoped>
-
-</style>
+<style lang="scss" scoped></style>

@@ -1,6 +1,6 @@
 <template  >
   <div v-if="isLoaded">
-    <Mainbanner :category="categories" />
+    <Mainbanner :categories="categories" />
 
     <!-- medical suplies -->
     <HomeCategories :category="categories[0]" />
@@ -8,7 +8,7 @@
     <HomeCategories :category="categories[1]" />
     <HomeCategories :category="categories[2]" />
 
-    <BuyerCategories />
+    <BuyerCategories :categories="categories" />
     <CustomerReviews />
     <RequirementEnqury />
 

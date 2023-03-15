@@ -13,10 +13,10 @@
 
         </div>
         <!-- main categories  -->
-        <MainCategoryBox />
+        <MainCategoryBox :categories="categories" />
         <!-- main categories end -->
 
-        
+
         <div class="desktop-latest-bye-leads">
           <div class="row">
             <div class="col-lg-12">
@@ -439,162 +439,28 @@
         <div class="col-lg-12">
           <h1 class="main-heading">ALL CATEGORIES</h1>
         </div>
-        <div class="col-lg-4">
+
+        <div class="col-lg-4" v-for="(item, index) in categories.slice(0, 6)" :key="index">
           <div class="categorie-wrap">
-            <a href="" class="sub-heading">MEDICAL SUPPLIES</a>
+            <a href="" class="sub-heading">{{ item.title }}</a>
             <hr />
             <div class="row">
               <div class="col-md-7">
                 <ul>
-                  <li><a href="">Alcohol Swab Sticks/Cotton</a></li>
-                  <li><a href="">Blood Bank Refrigerator</a></li>
-                  <li><a href="">Eye Drops</a></li>
-                  <li><a href="">Face Shield</a></li>
-                  <li><a href="">Gowns</a></li>
+                  <li v-for="(sc, index) in item.children.slice(0, 6)" :key="index"><nuxt-link to="/">{{ sc.title
+                  }}</nuxt-link></li>
                 </ul>
               </div>
               <div class="col-md-5">
                 <ul>
-                  <li><a href="">Hand Sanitizer</a></li>
-                  <li><a href="">I.V. Catheter</a></li>
-                  <li><a href="">Masks</a></li>
-                  <li><a href="">Medical Gloves</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="categorie-wrap">
-            <a href="" class="sub-heading">FOOD & AGRICULTURE</a>
-            <hr />
-            <div class="row">
-              <div class="col-md-7">
-                <ul>
-                  <li><a href="">Alcohol/Wine/Beer</a></li>
-                  <li><a href="">Bean</a></li>
-                  <li><a href="">Birds Nests</a></li>
-                  <li><a href="">Cake</a></li>
-                  <li><a href="">Candies</a></li>
-                </ul>
-              </div>
-              <div class="col-md-5">
-                <ul>
-                  <li><a href="">Coffee</a></li>
-                  <li><a href="">Cooking Oil</a></li>
-                  <li><a href="">Corn</a></li>
-                  <li><a href="">Cream</a></li>
-                  <li><a href="">Dried Food</a></li>
+                  <li v-for="(sc, index) in item.children.slice(0, 6)" :key="index"><nuxt-link to="/">{{ sc.title
+                  }}</nuxt-link></li>
                 </ul>
               </div>
             </div>
           </div>
         </div>
 
-        <div class="col-lg-4">
-          <div class="categorie-wrap">
-            <a href="" class="sub-heading">INDUSTRIAL PRODUCTS</a>
-            <hr />
-            <div class="row">
-              <div class="col-md-6">
-                <ul>
-                  <li><a href="">Advertising Equipment</a></li>
-                  <li><a href="">Baskets</a></li>
-                  <li><a href="">Beads</a></li>
-                  <li><a href="">Borad</a></li>
-                  <li><a href="">Bobbin</a></li>
-                </ul>
-              </div>
-              <div class="col-md-6">
-                <ul>
-                  <li><a href="">Bolts/Screw</a></li>
-                  <li><a href="">Bottles</a></li>
-                  <li><a href="">Bowl/Container</a></li>
-                  <li><a href="">Boxes</a></li>
-                  <li><a href="">Cable/Wire/Harness</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="categorie-wrap">
-            <a href="" class="sub-heading">FASHION & ACCESSORIES</a>
-            <hr />
-            <div class="row">
-              <div class="col-md-6">
-                <ul>
-                  <li><a href="">Bag/Backpack</a></li>
-                  <li><a href="">Band</a></li>
-                  <li><a href="">Belt</a></li>
-                  <li><a href="">Blouse/Dress</a></li>
-                  <li><a href="">Dress/skirt</a></li>
-                </ul>
-              </div>
-              <div class="col-md-6">
-                <ul>
-                  <li><a href="">Hat/Cap</a></li>
-                  <li><a href="">Helmet</a></li>
-                  <li><a href="">Jacket/Coat/Blazer</a></li>
-                  <li><a href="">Jeans</a></li>
-                  <li><a href="">Pajamas</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="categorie-wrap">
-            <a href="" class="sub-heading">COSMETIC & PERSONAL CARE</a>
-            <hr />
-            <div class="row">
-              <div class="col-md-6">
-                <ul>
-                  <li><a href="">Bathing</a></li>
-                  <li><a href="">Body Care</a></li>
-                  <li><a href="">Essential/Fragrance Oil</a></li>
-                  <li><a href="">Facial Cleanser</a></li>
-                  <li><a href="">Facial Mask</a></li>
-                </ul>
-              </div>
-              <div class="col-md-6">
-                <ul>
-                  <li><a href="">Hair Care</a></li>
-                  <li><a href="">Health Care Goods</a></li>
-                  <li><a href="">Hotel Amenity</a></li>
-                  <li><a href="">Lip Products</a></li>
-                  <li><a href="">Make-up Remover</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="categorie-wrap">
-            <a href="" class="sub-heading">FURNITURE & HOME APPLIANCES</a>
-            <hr />
-            <div class="row">
-              <div class="col-md-7">
-                <ul>
-                  <li><a href="">Bed</a></li>
-                  <li><a href="">Bookshelf</a></li>
-                  <li><a href="">Cabinet</a></li>
-                  <li><a href="">Calendar</a></li>
-                  <li><a href="">Camping Tent</a></li>
-                </ul>
-              </div>
-              <div class="col-md-5">
-                <ul>
-                  <li><a href="">Carpet/Mat</a></li>
-                  <li><a href="">Chair</a></li>
-                  <li><a href="">Clock</a></li>
-                  <li><a href="">Closet/Wardrobe</a></li>
-                  <li><a href="">Cups</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
 
       <div class="our-suppliers">
@@ -678,6 +544,7 @@ import MainCategoryBox from './shared/MainCategoyBox.vue'
 export default {
   name: "BuyerCategories",
   components: { RequirementEnqury, MainCategoryBox },
+  props: ["categories"],
   data() {
     return {
       active: "",
