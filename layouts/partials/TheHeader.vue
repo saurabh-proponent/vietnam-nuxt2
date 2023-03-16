@@ -159,13 +159,6 @@
     </header>
 </template>
 
-
-
-
-
-
-
-
 <script>
 import { mapState } from "vuex";
 
@@ -174,8 +167,10 @@ export default {
     name: "TheHeader",
     components: {},
     computed: {
-        ...mapState('categories', ['categories']),
+        ...mapState('categories', ['categories','isLoaded']),
     },
+mounted(){
+}
 };
 </script>
 

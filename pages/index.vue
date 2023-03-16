@@ -1,7 +1,6 @@
 <template  >
   <div v-if="isLoaded">
     <Mainbanner :categories="categories" />
-
     <!-- medical suplies -->
     <HomeCategories :category="categories[0]" />
     <RequirementEnqury />
@@ -11,12 +10,18 @@
     <CustomerReviews />
     <RequirementEnqury />
 
+  </div>
 
+
+  <div v-else>
+    <Loading />
   </div>
 </template>
 
 <script>
-
+import Vue from 'vue';
+import VueTelInput from 'vue-tel-input';
+import 'vue-tel-input/dist/vue-tel-input.css';
 import { mapActions, mapState } from "vuex";
 
 import Mainbanner from "../components/Mainbanner.vue";
@@ -24,15 +29,13 @@ import HomeCategories from "../components/HomeCategories.vue";
 import RequirementEnqury from "../components/shared/RequirementEnqury.vue";
 import BuyerCategories from "../components/BuyerCategories.vue";
 import CustomerReviews from "../components/CustomerReviews.vue";
-import Vue from 'vue';
-import VueTelInput from 'vue-tel-input';
-import 'vue-tel-input/dist/vue-tel-input.css';
+import Loading from '../components/shared/Loading.vue';
 
 Vue.use(VueTelInput);
 
 export default {
   name: "IndexPage",
-  components: { Mainbanner, HomeCategories, RequirementEnqury, BuyerCategories, CustomerReviews, },
+  components: { Mainbanner, HomeCategories, RequirementEnqury, BuyerCategories, CustomerReviews, Loading },
   head() {
     return {
       title: 'VietnamFactoryb2b.com | Vietnam To The World',
@@ -48,25 +51,15 @@ export default {
   },
   data() {
     return {
-      isLoaded: false,
-      categories: []
+
     }
   },
   methods: {
     ...mapActions('categories', ['fetchCategories']),
-    async getCategory() {
-      try {
-        const res = await this.$axios.get('/categories')
-        if (res.data) {
-          this.isLoaded = true
-          this.categories = res.data.categories
-          console.log(res.data.categories)
-        }
+  },
 
-      } catch (e) {
-        console.log(e)
-      }
-    },
+  computed: {
+    ...mapState('categories', ['categories', 'isLoaded']),
   },
   mounted() {
     this.$nextTick(() => {
@@ -75,9 +68,7 @@ export default {
     })
   },
   async created() {
-    this.getCategory()
     await this.fetchCategories()
-
   }
 
 
