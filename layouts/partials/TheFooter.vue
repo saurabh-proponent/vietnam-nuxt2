@@ -1,4 +1,4 @@
-<template>
+<template >
   <div>
     <section class="buy-banner">
       <div class="container">
@@ -41,29 +41,36 @@
             </div>
           </div>
           <div class="col-lg-4">
+
+
+            <!-- categories  -->
+
             <div class="row">
               <div class="col-md-12">
                 <span class="heading">CATEGORIES</span>
               </div>
               <div class="col-md-5">
                 <ul class="list">
-                  <li class="item"><a href="" class="link">Medical Supplies</a></li>
-                  <li class="item"><a href="" class="link">Food & Agriculture</a></li>
-                  <li class="item"><a href="" class="link">Industrial Products</a></li>
+                  <li class="item" v-for="item in categories.slice(0, 3)" :key="item.id">
+                    <nuxt-link class="link" :to="item.slug">{{ item.title }}</nuxt-link>
+                  </li>
                 </ul>
               </div>
               <div class="col-md-7">
                 <ul class="list">
-                  <li class="item"><a href="" class="link">Fashion & Accessories</a></li>
-                  <li class="item">
-                    <a href="" class="link">Cosmetic & Personal Care</a>
-                  </li>
-                  <li class="item">
-                    <a href="" class="link">Furniture & Home Appliances</a>
+                  <li class="item" v-for="item in categories.slice(0, 3)" :key="item.id">
+                    <nuxt-link class="link" :to="item.slug">{{ item.title }}</nuxt-link>
                   </li>
                 </ul>
               </div>
             </div>
+
+            <!-- categories end -->
+
+
+
+
+
           </div>
           <div class="col-lg-4">
             <div class="row">
@@ -211,13 +218,19 @@
 
 
 <script>
+import { mapActions, mapGetters, mapState } from "vuex";
 
-import { mapActions } from 'vuex';
 
 export default {
   name: "TheFooter",
   components: {},
-  
-
+  data() {
+    return {
+      isLoaded: false
+    }
+  },
+  computed: {
+    ...mapState('categories', ['categories']),
+  },
 };
 </script>

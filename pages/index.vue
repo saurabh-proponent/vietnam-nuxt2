@@ -42,14 +42,14 @@ export default {
           name: 'description',
           content: 'We offer vietnam to the world.'
         },
-       
+
       ]
     };
   },
   data() {
     return {
       isLoaded: false,
-      categories:[]
+      categories: []
     }
   },
   methods: {
@@ -73,8 +73,6 @@ export default {
       this.$nuxt.$loading.start()
       setTimeout(() => this.$nuxt.$loading.finish(), 500)
     })
-    console.log("page store",this.$store.state.categories)
-
   },
   async created() {
     this.getCategory()

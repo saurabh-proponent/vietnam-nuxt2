@@ -4,7 +4,7 @@ export const actions = {
             const res = await this.$axios.get('/categories')
             if (res.data) {
                 commit('FETCH_CATEGORIES', res.data.categories);
-                console.log("store ", res.data.categories)
+                console.log("store action", res.data.categories)
             }
             return res.data
         } catch (e) {
@@ -15,6 +15,9 @@ export const actions = {
 
 export const mutations = {
     FETCH_CATEGORIES(state, categories) {
+
+        console.log("in mutation +++++++++++++++++", categories)
+        console.log("in mutation state +++++++++++++++++", state)
         state.categories = categories;
     },
 }
