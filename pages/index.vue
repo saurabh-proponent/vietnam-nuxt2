@@ -9,10 +9,7 @@
     <BuyerCategories :categories="categories" />
     <CustomerReviews />
     <RequirementEnqury />
-
   </div>
-
-
   <div v-else>
     <Loading />
   </div>

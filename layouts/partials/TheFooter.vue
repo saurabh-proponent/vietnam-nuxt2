@@ -102,7 +102,9 @@
         <div class="footer-bottom">
           <div class="row">
             <div class="col-lg-6">
+            <nuxt-link to="/">
               <img src="../../assets/img/logos/footer-logo.png" alt="" class="img-fluid footer-logo" />
+            </nuxt-link>
             </div>
             <div class="col-lg-6">
               <span class="copyright-text">© 2023 Vietnam Factory.</span>

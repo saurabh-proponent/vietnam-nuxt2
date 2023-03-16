@@ -6,18 +6,18 @@
           <div class="callto-action">
             <div class="row">
               <div class="col-lg-6">
-                <nuxt-link :to="'categories/' + category.slug">
+                <nuxt-link :to="'/categories/' + category.slug">
                   <h1 class="main-heading">{{ category.title }}</h1>
                 </nuxt-link>
               </div>
               <div class="col-lg-6">
-                <nuxt-link :to="'categories/' + category.slug" class="cta-link">VIEW ALL <i
+                <nuxt-link :to="'/categories/' + category.slug" class="cta-link">VIEW ALL <i
                     class="fa-solid fa-angles-right"></i></nuxt-link>
               </div>
               <div class="col-lg-3 p-0">
                 <div class="left-wraper">
                   <img :src="category.image" class="img-fluid hot-sale-img" alt="" />
-                  <nuxt-link :to="'categories/' + category.slug">
+                  <nuxt-link :to="'/categories/' + category.slug">
                     <button class="btn-primary">VIEW ALL</button>
                   </nuxt-link>
                 </div>
@@ -27,7 +27,7 @@
                 <div class="row border-bottom">
                   <!-- dynamic        -->
                   <div class="col" v-for="(item, index) in category.children.slice(0, 5)" :key="index">
-                    <NuxtLink :to="'categories/' + item.slug">
+                    <NuxtLink :to="'/categories/' + item.slug">
                       <div class="card">
                         <img :src="item.image" class="img-fluid" alt="" />
                         <h5 class="heading">{{ item.title }}</h5>
@@ -40,7 +40,7 @@
                 <div class="row">
                   <!-- dynamic        -->
                   <div class="col" v-for="(item, index) in category.children.slice(5, 10)" :key="index">
-                    <NuxtLink :to="'categories/' + item.slug">
+                    <NuxtLink :to="'/categories/' + item.slug">
                       <div class="card">
                         <img :src="item.image" class="img-fluid" alt="" />
                         <h5 class="heading">{{ item.title }}</h5>

@@ -445,19 +445,19 @@
 
         <div class="col-lg-4" v-for="(item, index) in categories.slice(0, 6)" :key="index">
           <div class="categorie-wrap">
-            <nuxt-link class="sub-heading" :to="'categories/' + item.slug">{{ item.title }}</nuxt-link>
+            <nuxt-link class="sub-heading" :to="'/categories/' + item.slug">{{ item.title }}</nuxt-link>
             <hr />
             <div class="row">
               <div class="col-md-7">
                 <ul>
                   <li v-for="(sc, index) in item.children.slice(0, 6)" :key="index"><nuxt-link
-                      :to="'categories/' + sc.slug">{{ sc.title }}</nuxt-link></li>
+                      :to="'/categories/' + sc.slug">{{ sc.title }}</nuxt-link></li>
                 </ul>
               </div>
               <div class="col-md-5">
                 <ul>
                   <li v-for="(sc, index) in item.children.slice(0, 6)" :key="index"><nuxt-link
-                      :to="'categories/' + sc.slug">{{
+                      :to="'/categories/' + sc.slug">{{
                         sc.title }}</nuxt-link></li>
                 </ul>
               </div>

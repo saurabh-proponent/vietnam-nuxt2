@@ -13,11 +13,6 @@
 import TheHeader from './partials/TheHeader.vue';
 import TheFooter from './partials/TheFooter.vue';
 
-
-
-
-
-
 export default {
     data() {
         return {
