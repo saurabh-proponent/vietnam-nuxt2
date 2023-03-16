@@ -27,7 +27,7 @@
                 <div class="row border-bottom">
                   <!-- dynamic        -->
                   <div class="col" v-for="(item, index) in category.children.slice(0, 5)" :key="index">
-                    <NuxtLink :to="'subcategories/' + item.slug">
+                    <NuxtLink :to="'categories/' + item.slug">
                       <div class="card">
                         <img :src="item.image" class="img-fluid" alt="" />
                         <h5 class="heading">{{ item.title }}</h5>
@@ -40,7 +40,7 @@
                 <div class="row">
                   <!-- dynamic        -->
                   <div class="col" v-for="(item, index) in category.children.slice(5, 10)" :key="index">
-                    <NuxtLink :to="'subcategories/' + item.slug">
+                    <NuxtLink :to="'categories/' + item.slug">
                       <div class="card">
                         <img :src="item.image" class="img-fluid" alt="" />
                         <h5 class="heading">{{ item.title }}</h5>

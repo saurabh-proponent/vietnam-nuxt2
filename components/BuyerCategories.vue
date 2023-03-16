@@ -451,13 +451,13 @@
               <div class="col-md-7">
                 <ul>
                   <li v-for="(sc, index) in item.children.slice(0, 6)" :key="index"><nuxt-link
-                      :to="'subcategories/' + sc.slug">{{ sc.title }}</nuxt-link></li>
+                      :to="'categories/' + sc.slug">{{ sc.title }}</nuxt-link></li>
                 </ul>
               </div>
               <div class="col-md-5">
                 <ul>
                   <li v-for="(sc, index) in item.children.slice(0, 6)" :key="index"><nuxt-link
-                      :to="'subcategories/' + sc.slug">{{
+                      :to="'categories/' + sc.slug">{{
                         sc.title }}</nuxt-link></li>
                 </ul>
               </div>

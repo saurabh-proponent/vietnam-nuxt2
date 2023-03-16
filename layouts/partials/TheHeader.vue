@@ -109,7 +109,7 @@
                             </nuxt-link>
                             <ul class="dropdown-menu">
                                 <li v-for="item in categories" :key="item.id">
-                                    <nuxt-link class="dropdown-item" :to="item.slug">{{ item.title }}</nuxt-link>
+                                    <nuxt-link class="dropdown-item" :to="'categories/'+item.slug">{{ item.title }}</nuxt-link>
                                 </li>
 
                             </ul>
