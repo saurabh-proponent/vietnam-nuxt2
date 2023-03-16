@@ -66,7 +66,7 @@
             <div class="desktop-product-wrap">
                 <div class="row border my-4 mx-0 d-flex align-items-center">
                     <div class="col-lg-2 col-md-4 col-6" v-for="(item, index) in categories.slice(0, 6)" :key="index">
-                        <nuxt-link :to="item.slug">
+                        <nuxt-link :to="'categories/' + item.slug">
                             <div class="product-wrap">
                                 <img :src="item.image" class="img-fluid" alt="" />
                                 <span class="product-name">{{ item.title }}</span>

@@ -1,7 +1,7 @@
 <template>
   <div class="row">
     <div class="col-lg-2 col-6" v-for="(item, index) in categories.slice(0, 6)" :key="index">
-      <nuxt-link :to="item.slug">
+      <nuxt-link :to="'categories/' + item.slug">
         <div class="all-buyer-wrap">
           <img :src="item.image" class="img-fluid" alt="" />
           <span class="product-name">{{ item.title }}</span>
