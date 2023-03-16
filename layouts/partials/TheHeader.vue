@@ -109,14 +109,11 @@
                             </nuxt-link>
                             <ul class="dropdown-menu">
                                 <li v-for="item in categories" :key="item.id">
-                                    <nuxt-link class="dropdown-item" :to="'categories/'+item.slug">{{ item.title }}</nuxt-link>
+                                    <nuxt-link class="dropdown-item" :to="'/categories/' + item.slug">{{ item.title}}</nuxt-link>
                                 </li>
-
                             </ul>
                         </li>
                         <!-- dropdown end -->
-
-
 
                         <li class="nav-item">
                             <a class="nav-link" aria-current="page" href="">All</a>
@@ -167,10 +164,10 @@ export default {
     name: "TheHeader",
     components: {},
     computed: {
-        ...mapState('categories', ['categories','isLoaded']),
+        ...mapState('categories', ['categories', 'isLoaded']),
     },
-mounted(){
-}
+    mounted() {
+    }
 };
 </script>
 

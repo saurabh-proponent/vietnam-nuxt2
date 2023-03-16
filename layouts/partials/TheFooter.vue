@@ -52,14 +52,14 @@
               <div class="col-md-5">
                 <ul class="list">
                   <li class="item" v-for="item in categories.slice(0, 3)" :key="item.id">
-                    <nuxt-link class="link" :to="'categories/'+item.slug">{{ item.title }}</nuxt-link>
+                    <nuxt-link class="link" :to="'/categories/'+item.slug">{{ item.title }}</nuxt-link>
                   </li>
                 </ul>
               </div>
               <div class="col-md-7">
                 <ul class="list">
-                  <li class="item" v-for="item in categories.slice(0, 3)" :key="item.id">
-                    <nuxt-link class="link" :to="'categories/'+item.slug">{{ item.title }}</nuxt-link>
+                  <li class="item" v-for="item in categories.slice(3, 6)" :key="item.id">
+                    <nuxt-link class="link" :to="'/categories/'+item.slug">{{ item.title }}</nuxt-link>
                   </li>
                 </ul>
               </div>
