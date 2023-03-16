@@ -5,7 +5,8 @@ export const actions = {
             if (res.data) {
                 commit('FETCH_CATEGORIES', res.data.categories);
             }
-        } catch (e) {
+        } catch (err) {
+            this.$toast.error(err)
         }
     }
 }
@@ -19,5 +20,7 @@ export const mutations = {
 
 export const state = () => ({
     categories: [],
-    isLoaded: false
+    isLoaded: false,
+    error:""
+
 });

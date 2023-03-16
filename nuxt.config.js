@@ -47,12 +47,9 @@ export default {
       baseURL: "https://devadmin.vietnamfactoryb2b.com/api"
     }
   },
-  modules: ['@nuxtjs/axios'],
+  modules: ['@nuxtjs/axios', '@nuxtjs/toast',],
 
-  // Modules: https://go.nuxtjs.dev/config-modules
-  // modules: [
-  //   'bootstrap-vue/nuxt',
-  // ],
+ 
   module: {
     rules: [
       {
@@ -75,5 +72,17 @@ export default {
     removeRedundantAttributes: true,
     trimCustomFragments: true,
     useShortDoctype: true,
-  }
+  },
+
+  //toaster
+  toast: {
+    position: "top-right",
+    duration: 2000,
+    action: {
+      text: "Cancel",
+      onClick: (e, toastObject) => {
+        toastObject.goAway(0);
+      },
+    },
+  },
 }
