@@ -101,19 +101,23 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav">
+
+                        <!-- dropdown -->
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle p-0" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                            </a>
+                            <nuxt-link to="" class="nav-link dropdown-toggle p-0" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                            </nuxt-link>
                             <ul class="dropdown-menu">
-                                <li><a href="" class="dropdown-item">Medical Supplies</a></li>
-                                <li><a href="" class="dropdown-item">Food & Agriculture</a></li>
-                                <li><a href="" class="dropdown-item">Industrial Products</a></li>
-                                <li><a href="" class="dropdown-item">Fashion Accessories</a></li>
-                                <li><a href="" class="dropdown-item">Cosmetic & Personal Care</a></li>
-                                <li><a href="" class="dropdown-item">Furniture & Home Appliance</a></li>
+                                <li v-for="item in categories" :key="item.id">
+                                    <nuxt-link class="dropdown-item" :to="item.slug">{{ item.title }}</nuxt-link>
+                                </li>
+
                             </ul>
                         </li>
+                        <!-- dropdown end -->
+
+
+
                         <li class="nav-item">
                             <a class="nav-link" aria-current="page" href="">All</a>
                         </li>
@@ -163,11 +167,15 @@
 
 
 <script>
+import { mapState } from "vuex";
 
 
 export default {
     name: "TheHeader",
     components: {},
+    computed: {
+        ...mapState('categories', ['categories']),
+    },
 };
 </script>
 
