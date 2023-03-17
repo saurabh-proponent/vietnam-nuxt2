@@ -54,6 +54,7 @@ export default {
   methods: {
     ...mapActions('categories', ['fetchCategories']),
     ...mapActions('buyerLeads', ['fetchBuyerLeads']),
+    ...mapActions('reviews', ['fetchReviews']),
   },
 
   computed: {
@@ -68,6 +69,7 @@ export default {
   async created() {
     await this.fetchCategories()
     await this.fetchBuyerLeads()
+    await this.fetchReviews()
   }
 
 

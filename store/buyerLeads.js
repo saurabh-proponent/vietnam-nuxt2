@@ -17,7 +17,7 @@ export const mutations = {
         state.totalLeads = buyerLeads.totalLeads;
         state.totalPages = buyerLeads.totalPages;
         state.currentPage = buyerLeads.currentPage;
-        state.isLoaded = true
+        state.isBuyerLeads = true
     },
 }
 
@@ -26,6 +26,6 @@ export const state = () => ({
     totalLeads: 0,
     totalPages: 0,
     currentPage: 0,
-    isLoaded: false,
+    isBuyerLeads: false,
     error: ""
 });

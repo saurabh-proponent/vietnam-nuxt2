@@ -16,14 +16,12 @@
         <MainCategoryBox :categories="categories" />
         <!-- main categories end -->
 
-
-        <div class="desktop-latest-bye-leads">
+        <!-- buyer Leads  -->
+        <div class="desktop-latest-bye-leads" v-if="isBuyerLeads">
           <div class="row">
             <div class="col-lg-12">
               <h1 class="main-heading">LATEST BUY LEADS</h1>
             </div>
-
-
             <div class="col-lg-4" v-for="(item, index) in buyerLeads.slice(0, 6)" :key="index">
               <div class="buyer-wraper">
                 <a href="">
@@ -69,60 +67,9 @@
                 </a>
               </div>
             </div>
-
-            <!-- <div class="col-lg-4">
-              <div class="buyer-wraper">
-                <a href="">
-                  <div class="card">
-                    <div class="card-header">
-                      <div class="row">
-                        <div class="col">
-                          <p class="text">ICUMSA 45 SUGAR</p>
-                        </div>
-                        <div class="col">
-                          <p class="text text-end">16 JAN 2023</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="card-body">
-                      <div class="row">
-                        <div class="col-md-4 col-12">
-                          <img src="../assets/img/icons/byuer-leads/medical.png" class="img-fluid" alt="" />
-                          <p class="country">
-                            Buyer <br />
-                            From China
-                          </p>
-                        </div>
-                        <div class="col-md-4 col-6">
-                          <ul>
-                            <li class="heading">Product Name:</li>
-                            <li class="heading">Quantity:</li>
-                            <li class="heading">Payment:</li>
-                            <li class="heading">Destination:</li>
-                          </ul>
-                        </div>
-                        <div class="col-md-4 col-6">
-                          <ul>
-                            <li>Icumsa45 -</li>
-                            <li>MOQ -</li>
-                            <li>LC</li>
-                            <li>Guangxi, China</li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </a>
-              </div>
-            </div>
-
-
- -->
-
-
-
           </div>
         </div>
+        <!-- buyer Leads  end -->
 
         <div class="latest-bye-leads-mobile">
           <div class="accordion mobile-view">
@@ -398,7 +345,7 @@ export default {
   },
   computed: {
     ...mapState('categories', ['categories', 'isLoaded']),
-    ...mapState('buyerLeads', ['buyerLeads']),
+    ...mapState('buyerLeads', ['buyerLeads', "isBuyerLeads"]),
   },
   methods: {
     toggleItem(index) {
