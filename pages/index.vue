@@ -1,12 +1,12 @@
 <template  >
   <div v-if="isLoaded">
-    <Mainbanner :categories="categories" />
+    <Mainbanner />
     <!-- medical suplies -->
     <HomeCategories :category="categories[0]" />
     <RequirementEnqury />
     <HomeCategories :category="categories[1]" />
     <HomeCategories :category="categories[2]" />
-    <BuyerCategories :categories="categories" />
+    <BuyerCategories />
     <CustomerReviews />
     <RequirementEnqury />
   </div>
@@ -53,6 +53,7 @@ export default {
   },
   methods: {
     ...mapActions('categories', ['fetchCategories']),
+    ...mapActions('buyerLeads', ['fetchBuyerLeads']),
   },
 
   computed: {
@@ -66,6 +67,7 @@ export default {
   },
   async created() {
     await this.fetchCategories()
+    await this.fetchBuyerLeads()
   }
 
 

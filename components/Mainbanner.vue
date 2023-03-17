@@ -177,12 +177,12 @@
 </template>
 
 <script>
-
+import { mapActions, mapState } from "vuex";
 import MainCategoyBox from './shared/MainCategoyBox.vue';
 export default {
     name: "Mainbanner",
     components: { MainCategoyBox },
-    props: ["categories"],
+    props: [""],
     data() {
         return {
         };
@@ -196,8 +196,8 @@ export default {
             }
         },
     },
-    mounted() {
-
-    },
+    computed: {
+    ...mapState('categories', ['categories', 'isLoaded']),
+  },
 };
 </script>
