@@ -47,9 +47,12 @@ export default {
       baseURL: "https://devadmin.vietnamfactoryb2b.com/api"
     }
   },
-  modules: ['@nuxtjs/axios', '@nuxtjs/toast',],
+  modules: [
+    '@nuxtjs/axios',
+    "nuxt-i18n",
+    '@nuxtjs/toast',],
 
- 
+
   module: {
     rules: [
       {
@@ -84,5 +87,24 @@ export default {
         toastObject.goAway(0);
       },
     },
+  },
+
+  // translation 
+  i18n: {
+    locales: [
+      {
+        code: "en",
+        file: "en.json",
+      },
+      {
+        code: "vn",
+        file: "vn.json",
+      },
+    ],
+    strategy: "no_prefix",
+    lazy: true,
+    langDir: "lang/",
+    defaultLocale: "en",
+    vueI18nLoader: true,
   },
 }

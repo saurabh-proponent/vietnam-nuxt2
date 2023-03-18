@@ -85,8 +85,13 @@ header {
 					color: $color_1;
 					margin: 0;
 				}
+
 				a {
 					text-decoration: none;
+					.flagIcon {
+						width: 35px;
+					}
+
 					i {
 						font-size: 22px;
 						transition: 0.5s ease-in-out;

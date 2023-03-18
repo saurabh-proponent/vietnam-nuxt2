@@ -8,7 +8,6 @@
                         <nuxt-link to="/" class="navbar-brand">
                             <img src="../../assets/img/logos/logo.svg" class="img-fluid logo" alt="">
                         </nuxt-link>
-
                     </div>
                     <div class="col-lg-5">
                         <form class="d-flex" role="search">
@@ -24,12 +23,18 @@
                     </div>
                     <div class="col-lg-4">
                         <ul class="top-list">
+                            <!-- LANGUAGE TRANSLATION  -->
                             <li>
-                                <a href="">
-                                    <i class="fa-solid fa-flag-usa"></i>
-                                    <p class="text">ENGLISH</p>
+                                <a href="#" @click.prevent.stop="changeLang()">
+                                    <img :alt="activeLang"
+                                    class="flagIcon"
+                                        :src="require(`~/assets/images/languages/${this.activeLanguage}.svg`)" />
+                                    <p class="text">{{ this.activeLanguage === "en" ? "ENGLISH" : "VIETNAME" }} </p>
                                 </a>
                             </li>
+                            <!-- LANGUAGE TRANSLATION END -->
+
+
                             <li>
                                 <a href="">
                                     <i class="fa-solid fa-cart-plus"></i>
@@ -109,7 +114,8 @@
                             </nuxt-link>
                             <ul class="dropdown-menu">
                                 <li v-for="item in categories" :key="item.id">
-                                    <nuxt-link class="dropdown-item" :to="'/categories/' + item.slug">{{ item.title}}</nuxt-link>
+                                    <nuxt-link class="dropdown-item" :to="'/categories/' + item.slug">{{
+                                        item.title }}</nuxt-link>
                                 </li>
                             </ul>
                         </li>
@@ -163,11 +169,44 @@ import { mapState } from "vuex";
 export default {
     name: "TheHeader",
     components: {},
+    data() {
+        return {
+            activeLang: ""
+        };
+    },
     computed: {
         ...mapState('categories', ['categories', 'isLoaded']),
+        availableLocales() {
+            return this.$i18n.locales;
+        },
+        activeLanguage() {
+            return this.$i18n.locale;
+        },
+    },
+    methods: {
+        changeLang() {
+            if (this.activeLang == 'en') {
+                this.activeLang = 'vn'
+                localStorage.setItem("lang", this.activeLang)
+            } else {
+                this.activeLang = 'en'
+                localStorage.setItem("lang", this.activeLang)
+            }
+            this.$i18n.setLocale(this.activeLang);
+
+        },
+
+        setLang() {
+            this.activeLang = localStorage.getItem("lang")
+            this.$i18n.setLocale(this.activeLang);
+
+        },
     },
     mounted() {
-    }
+        this.setLang()
+
+
+    },
 };
 </script>
 
