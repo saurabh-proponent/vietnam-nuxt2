@@ -12,13 +12,12 @@
                     <div class="col-lg-5">
                         <form class="d-flex" role="search">
                             <select name="" id="" class="form-select">
-                                <option value="">Product</option>
-                                <option value="">Buy Lead</option>
+                                <option value="">{{ $t("Products") }}</option>
+                                <option value="">{{ $t('Buyers Leads') }}</option>
                             </select>
-                            <input class="form-control" type="search" placeholder="what you are looking for"
-                                aria-label="Search">
+                            <input class="form-control" type="search" :placeholder="$t('Looking for')" aria-label="Search">
                             <button class="search-btn" type="submit"><i class="fa fa-search"></i>
-                                <span>Search</span></button>
+                                <span>{{ $t("Search") }}</span></button>
                         </form>
                     </div>
                     <div class="col-lg-4">
@@ -37,25 +36,25 @@
                             <li>
                                 <a href="">
                                     <i class="fa-solid fa-cart-plus"></i>
-                                    <p class="text">SELL</p>
+                                    <p class="text">{{ $t("Sell") }}</p>
                                 </a>
                             </li>
                             <li>
                                 <a href="">
                                     <i class="fa-solid fa-circle-info"></i>
-                                    <p class="text">HELP</p>
+                                    <p class="text">{{ $t('Help') }}</p>
                                 </a>
                             </li>
                             <li>
                                 <a href="">
                                     <i class="fa-regular fa-envelope-open"></i>
-                                    <p class="text">MESSAGE</p>
+                                    <p class="text">{{ $t("Message") }}</p>
                                 </a>
                             </li>
                             <li>
                                 <button class="sign-in top">
                                     <i class="fa-solid fa-user-plus"></i>
-                                    <p class="text">SIGN IN</p>
+                                    <p class="text">{{ $t("Sign In") }}</p>
                                 </button>
 
                                 <div id="sign-form" class="form">
