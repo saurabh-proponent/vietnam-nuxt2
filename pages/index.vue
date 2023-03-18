@@ -19,7 +19,7 @@
 import Vue from 'vue';
 import VueTelInput from 'vue-tel-input';
 import 'vue-tel-input/dist/vue-tel-input.css';
-import { mapActions, mapState } from "vuex";
+import { mapState } from "vuex";
 
 import Mainbanner from "../components/Mainbanner.vue";
 import HomeCategories from "../components/HomeCategories.vue";
@@ -51,11 +51,6 @@ export default {
 
     }
   },
-  methods: {
-    ...mapActions('categories', ['fetchCategories']),
-    ...mapActions('buyerLeads', ['fetchBuyerLeads']),
-    ...mapActions('reviews', ['fetchReviews']),
-  },
 
   computed: {
     ...mapState('categories', ['categories', 'isLoaded']),
@@ -66,11 +61,7 @@ export default {
       setTimeout(() => this.$nuxt.$loading.finish(), 500)
     })
   },
-  async created() {
-    await this.fetchCategories()
-    await this.fetchBuyerLeads()
-    await this.fetchReviews()
-  }
+
 
 
 };

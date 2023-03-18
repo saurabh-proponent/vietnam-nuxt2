@@ -71,6 +71,7 @@
         </div>
         <!-- buyer Leads  end -->
 
+        <!-- buyer Leads  Mobile Screen start -->
         <div class="latest-bye-leads-mobile">
           <div class="accordion mobile-view">
             <div class="container">
@@ -82,15 +83,15 @@
                   </div>
                 </div>
               </div>
-              <div class="accordion-item" v-for="(item, index) in items" :key="index">
+              <div class="accordion-item" v-for="(item, index) in buyerLeads.slice(0, 6)" :key="index">
                 <div class="accordion-title" @click="toggleItem(index)" v-bind:class="active === index ? 'active' : ''">
                   <div class="row">
                     <div class="col-2 d-flex align-items-center justify-content-center">
                       <img src="../assets/img/icons/byuer-leads/medical-mobile.png" alt="" class="img-fluid">
                     </div>
                     <div class="col-9">
-                      <span class="text">ICUMSA 45 SUGAR</span> <br>
-                      <span class="text">16 JAN 2023</span>
+                      <span class="text">{{ item.contact_person }}</span> <br>
+                      <span class="text">{{ item.date }}</span>
                     </div>
                     <div class="col-1 d-flex align-items-center justify-content-center">
                       <i class="fa-solid fa-chevron-down"></i>
@@ -102,15 +103,15 @@
                     <div class="col-4 d-flex align-items-center justify-content-center">
                       <div class="buyer-from">
                         <h1 class="heading">Buyer From</h1>
-                        <span class="country">China</span>
+                        <span class="country">{{ item.country.name }}</span>
                       </div>
                     </div>
                     <div class="col-8">
                       <ul class="list">
-                        <li>Product Name: Icumsa45 -</li>
-                        <li>Quantity: MOQ -</li>
-                        <li>Payment: LC</li>
-                        <li>Destination: Guangxi, China</li>
+                        <li>Product Name: {{ item.name }}</li>
+                        <li>Quantity: {{ item.quantity }}</li>
+                        <li>Payment: {{ item.payment_terms }}</li>
+                        <li>Destination: {{ item.destination }}</li>
                       </ul>
                     </div>
                   </div>
@@ -119,6 +120,7 @@
             </div>
           </div>
         </div>
+        <!-- buyer Leads  Mobile Screen end -->
       </div>
 
       <!-- requirment  -->
@@ -205,15 +207,11 @@
           </div>
         </div>
       </div>
-
-
-
       <!-- all categories start  -->
       <div class="row sub-space">
         <div class="col-lg-12">
           <h1 class="main-heading">ALL CATEGORIES</h1>
         </div>
-
         <div class="col-lg-4" v-for="(item, index) in categories.slice(0, 6)" :key="index">
           <div class="categorie-wrap">
             <nuxt-link class="sub-heading" :to="'/categories/' + item.slug">{{ item.title }}</nuxt-link>
@@ -235,10 +233,8 @@
             </div>
           </div>
         </div>
-
       </div>
       <!-- all categories end  -->
-
       <div class="our-suppliers">
         <div class="col-lg-12">
           <h1 class="main-heading">OUR SUPPLIERS</h1>

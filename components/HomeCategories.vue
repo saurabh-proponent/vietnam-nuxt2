@@ -25,7 +25,7 @@
 
               <div class="col-lg-9">
                 <div class="row border-bottom">
-                  <!-- dynamic        -->
+                  <!-- sub categories      -->
                   <div class="col" v-for="(item, index) in category.children.slice(0, 5)" :key="index">
                     <NuxtLink :to="'/categories/' + item.slug">
                       <div class="card">
@@ -34,11 +34,9 @@
                       </div>
                     </NuxtLink>
                   </div>
-                  <!-- dynamic end       -->
                 </div>
 
                 <div class="row">
-                  <!-- dynamic        -->
                   <div class="col" v-for="(item, index) in category.children.slice(5, 10)" :key="index">
                     <NuxtLink :to="'/categories/' + item.slug">
                       <div class="card">
@@ -47,34 +45,33 @@
                       </div>
                     </NuxtLink>
                   </div>
-                  <!-- dynamic end       -->
+                  <!-- sub categories   end   -->
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-
+      
+      <!-- Mobile Screen accordion start -->
       <div class="accordion mobile-view">
         <div class="container">
           <div class="row">
             <div class="col-md-12">
               <div class="heading-wrap">
-                <h1 class="main-heading">Medical Supplies For You</h1>
+                <h1 class="main-heading">{{ category.title }}</h1>
                 <button class="btn mobile-btn">See All</button>
               </div>
             </div>
           </div>
-          <div class="accordion-item" v-for="(item, index) in items" :key="index">
+          <div class="accordion-item" v-for="(item, index) in category.children.slice(0, 3)" :key="index">
             <div class="accordion-title" @click="toggleItem(index)" v-bind:class="active === index ? 'active' : ''">
               {{ item.title }} <i class="fa-solid fa-chevron-down"></i>
             </div>
             <div class="accordion-content" v-bind:class="active === index ? 'active contentArea' : 'contentArea'">
               <ul class="list-item">
-                <li class="item" v-for="(item, index) in items" :key="index">
-                  <a href="" v-for="(item2, index) in item.content" :key="index">{{
-                    item2
-                  }}</a>
+                <li class="item" v-for="(sc, index) in category.children" :key="index">
+                  <a href="">{{ sc.title }}</a>
                   <i class="fa-solid fa-chevron-right"></i>
                 </li>
               </ul>
@@ -82,6 +79,8 @@
           </div>
         </div>
       </div>
+      <!-- Mobile Screen accordion end  -->
+
     </div>
   </section>
 </template>
