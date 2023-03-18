@@ -26,8 +26,7 @@
                             <!-- LANGUAGE TRANSLATION  -->
                             <li>
                                 <a href="#" @click.prevent.stop="changeLang()">
-                                    <img :alt="activeLang"
-                                    class="flagIcon"
+                                    <img :alt="activeLang" class="flagIcon"
                                         :src="require(`~/assets/images/languages/${this.activeLanguage}.svg`)" />
                                     <p class="text">{{ this.activeLanguage === "en" ? "ENGLISH" : "VIETNAME" }} </p>
                                 </a>
@@ -94,7 +93,7 @@
             </div>
         </div>
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container">
+            <div class="container-fluid">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                     aria-label="Toggle navigation">
@@ -105,8 +104,7 @@
                     </span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav">
-
+                    <ul class="navbar-nav ms-auto">
                         <!-- dropdown -->
                         <li class="nav-item dropdown">
                             <nuxt-link to="" class="nav-link dropdown-toggle p-0" href="#" role="button"
@@ -122,31 +120,32 @@
                         <!-- dropdown end -->
 
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="">All</a>
+
+                            <a class="nav-link" aria-current="page" href="">{{ $t('All') }}</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="">Products</a>
+                            <a class="nav-link" href="">{{ $t("Products") }}</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="">Buyers Leads</a>
+                            <a class="nav-link" href="">{{ $t('Buyers Leads') }}</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="">Consultant Services</a>
+                            <a class="nav-link" href="">{{ $t('Consultant Services') }}</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="">Pricing</a>
+                            <a class="nav-link" href="">{{ $t('Pricing') }}</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="">About Us</a>
+                            <a class="nav-link" href="">{{ $t('About Us') }}</a>
                         </li>
                     </ul>
                     <ul class="navbar-nav social-nav ms-auto">
                         <li class="list-item">
-                            <a class="nav-link" href="">Tell Us Your Requirement</a>
+                            <a class="nav-link" href="">{{ $t('Tell Us Your Requirement') }}</a>
                         </li>
                         <li class="list-item">
                             <ul class="social-handle">
-                                <li class="nav-item">Follow us on</li>
+                                <li class="nav-item">{{ $t('Follow us on') }}</li>
                                 <li class="nav-item"><a href="" class="nav-link"><i class="fa-brands fa-facebook-f"></i></a>
                                 </li>
                                 <li class="nav-item"><a href="" class="nav-link"><i class="fa-brands fa-instagram"></i></a>
