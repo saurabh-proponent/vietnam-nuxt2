@@ -385,7 +385,7 @@ header {
     box-shadow: 3px 2px 2px rgb(57 63 72 / 15%);
     transition: 0.3s all ease-in-out;
 	top: 0;
-    .navbar {
+    &.navbar {
         background-color: $color_3;
 
         .logo {

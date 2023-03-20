@@ -203,7 +203,7 @@ export default {
     },
     mounted() {
         if (process.client) {
-            const header = document.querySelector('.header')
+            const header = document.querySelector('.navbar')
 
             window.addEventListener('scroll', () => {
                 const scroll = window.pageYOffset
