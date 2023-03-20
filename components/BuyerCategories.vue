@@ -38,14 +38,13 @@
                     </div>
                     <div class="card-body">
                       <div class="row">
-                        <div class="col-md-4 col-12">
+                        <div class="col-12 d-flex justify-content-start align-items-center">
                           <img src="../assets/img/icons/byuer-leads/medical.png" class="img-fluid" alt="" />
                           <p class="country">
-                            Buyer <br />
-                            From {{ item.country.name }}
+                            Buyer From {{ item.country.name }}
                           </p>
                         </div>
-                        <div class="col-md-4 col-6">
+                        <div class="col-md-5">
                           <ul>
                             <li class="heading">Product Name:</li>
                             <li class="heading">Quantity:</li>
@@ -53,7 +52,7 @@
                             <li class="heading">Destination:</li>
                           </ul>
                         </div>
-                        <div class="col-md-4 col-6">
+                        <div class="col-md-7">
                           <ul>
                             <li>{{ item.name }}</li>
                             <li>{{ item.quantity }}</li>
@@ -241,64 +240,64 @@
         </div>
         <div class="row border-bottom mx-0">
           <div class="col-lg-2 col-md-4 col-4">
-            <div class="product-wrap">
+            <div class="supplier-wrap">
               <img src="../assets/img/logos/suppliers-logos/L1.jpg" class="img-fluid" alt="" />
             </div>
           </div>
           <div class="col-lg-2 col-md-4 col-4">
-            <div class="product-wrap">
+            <div class="supplier-wrap">
               <img src="../assets/img/logos/suppliers-logos/L2.jpg" class="img-fluid" alt="" />
             </div>
           </div>
           <div class="col-lg-2 col-md-4 col-4">
-            <div class="product-wrap">
+            <div class="supplier-wrap">
               <img src="../assets/img/logos/suppliers-logos/L3.jpg" class="img-fluid" alt="" />
             </div>
           </div>
           <div class="col-lg-2 col-md-4 col-4">
-            <div class="product-wrap">
+            <div class="supplier-wrap">
               <img src="../assets/img/logos/suppliers-logos/L4.jpg" class="img-fluid" alt="" />
             </div>
           </div>
           <div class="col-lg-2 col-md-4 col-4">
-            <div class="product-wrap">
+            <div class="supplier-wrap">
               <img src="../assets/img/logos/suppliers-logos/L5.jpg" class="img-fluid" alt="" />
             </div>
           </div>
           <div class="col-lg-2 col-md-4 col-4">
-            <div class="product-wrap">
+            <div class="supplier-wrap">
               <img src="../assets/img/logos/suppliers-logos/L6.jpg" class="img-fluid" alt="" />
             </div>
           </div>
         </div>
         <div class="row mx-0">
           <div class="col-lg-2 col-md-4 col-4">
-            <div class="product-wrap">
+            <div class="supplier-wrap">
               <img src="../assets/img/logos/suppliers-logos/L7.jpg" class="img-fluid" alt="" />
             </div>
           </div>
           <div class="col-lg-2 col-md-4 col-4">
-            <div class="product-wrap">
+            <div class="supplier-wrap">
               <img src="../assets/img/logos/suppliers-logos/L8.jpg" class="img-fluid" alt="" />
             </div>
           </div>
           <div class="col-lg-2 col-md-4 col-4">
-            <div class="product-wrap">
+            <div class="supplier-wrap">
               <img src="../assets/img/logos/suppliers-logos/L7.jpg" class="img-fluid" alt="" />
             </div>
           </div>
           <div class="col-lg-2 col-md-4 col-4">
-            <div class="product-wrap">
+            <div class="supplier-wrap">
               <img src="../assets/img/logos/suppliers-logos/L9.jpg" class="img-fluid" alt="" />
             </div>
           </div>
           <div class="col-lg-2 col-md-4 col-4">
-            <div class="product-wrap">
+            <div class="supplier-wrap">
               <img src="../assets/img/logos/suppliers-logos/L10.jpg" class="img-fluid" alt="" />
             </div>
           </div>
           <div class="col-lg-2 col-md-4 col-4">
-            <div class="product-wrap">
+            <div class="supplier-wrap">
               <img src="../assets/img/logos/suppliers-logos/L11.jpg" class="img-fluid" alt="" />
             </div>
           </div>

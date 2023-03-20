@@ -141,7 +141,9 @@
 			height: 100%;
 
 			img {
-				height: 385px;
+				height: 398px;
+    			position: relative;
+    			z-index: 99;
 			}
 
 			.btn-primary {
@@ -166,7 +168,7 @@
 				content: "";
 				position: absolute;
 				z-index: 0;
-				height: 100%;
+				height: calc(100% + 20px);
 				width: 100%;
 				border-left: 1px solid #dee2e6;
 				left: -15px;
@@ -202,36 +204,24 @@
 
 	.contact-form {
 		padding: 24px 12px;
+		.form-floating > .form-control:focus ~ label, .form-floating > .form-control:not(:placeholder-shown) ~ label, .form-floating > .form-control-plaintext ~ label, .form-floating > .form-select ~ label {
+			opacity: 0.65;
+			transform: scale(0.85) translateY(-1rem) translateX(0.15rem)!important;
+		}
 
-		.field-wrapper {
-			display: block;
+		.form-floating{
+			display: flex;
 			margin-bottom: 22px;
 			position: relative;
 			outline: none;
 			width: 100%;
 
-			label {
-				white-space: nowrap;
-				overflow: hidden;
-				font-size: 15px;
-				position: absolute;
-				top: 4px;
-				display: inline-block;
-				background: #fff;
-				margin: 8px 5px;
-				line-height: 1.4em;
-				padding: 0 10px;
-				transition: all 0.2s linear;
-				text-transform: capitalize;
-				font-weight: 400;
-			}
-
-			input {
+			.form-control{
 				padding: 10px 15px;
 				width: 100%;
 				border-radius: 3px;
 				border: none;
-				height: 48px;
+				height: 55px;
 				color: $color_2;
 				background-color: $background-color_1;
 
@@ -244,12 +234,20 @@
 					-webkit-appearance: none;
 					margin: 0;
 				}
+
+				&:focus{
+					box-shadow: none;
+				}
+			}
+
+			.vti__input{
+				display: none;
 			}
 
 			textarea {
-				height: 100px;
+				height: 100px!important;
 				width: 100%;
-				padding: 10px 15px;
+				padding: 20px 15px!important;
 				resize: none;
 				color: $color_2;
 				border-radius: 3px;
@@ -265,13 +263,6 @@
 				&:focus-visible {
 					outline: none;
 				}
-			}
-
-			input[type=number] {
-				-webkit-appearance: textfield;
-				-moz-appearance: textfield;
-				appearance: textfield;
-				padding-left: 55px;
 			}
 
 			.vue-tel-input {
@@ -501,16 +492,20 @@
 				}
 			}
 
-			.card-body {
+			.card-body {				
 				.country {
-					font-size: 17px;
-					font-weight: 700;
+					font-size: 18px;
+					font-weight: 600;
 					text-transform: uppercase;
 					margin: 0;
+					border-left: 2px solid $color_3;
+					padding-left: 10px;
 				}
 
 				img {
 					margin-bottom: 15px;
+					width: 50px;
+					margin-right: 10px;
 				}
 
 				ul {
@@ -826,7 +821,6 @@
 			text-align: center;
 
 			img {
-				border-radius: 50%;
 				margin-bottom: 10px;
 			}
 

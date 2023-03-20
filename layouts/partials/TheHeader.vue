@@ -31,8 +31,6 @@
                                 </a>
                             </li>
                             <!-- LANGUAGE TRANSLATION END -->
-
-
                             <li>
                                 <a href="">
                                     <i class="fa-solid fa-cart-plus"></i>
@@ -91,7 +89,7 @@
                 </div>
             </div>
         </div>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -163,13 +161,12 @@
 <script>
 import { mapState } from "vuex";
 
-
 export default {
     name: "TheHeader",
     components: {},
     data() {
         return {
-            activeLang: ""
+            activeLang: "",
         };
     },
     computed: {
@@ -199,13 +196,28 @@ export default {
             this.$i18n.setLocale(this.activeLang);
 
         },
+
     },
     mounted() {
         this.setLang()
+    },
+    mounted() {
+        if (process.client) {
+            const header = document.querySelector('.header')
 
+            window.addEventListener('scroll', () => {
+                const scroll = window.pageYOffset
 
+                if (scroll >= 100) {
+                    header.classList.add('sticky')
+                } else {
+                    header.classList.remove('sticky')
+                }
+            })
+        }
     },
 };
+
 </script>
 
 

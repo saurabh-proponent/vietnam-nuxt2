@@ -27,12 +27,18 @@ import RequirementEnqury from "../components/shared/RequirementEnqury.vue";
 import BuyerCategories from "../components/BuyerCategories.vue";
 import CustomerReviews from "../components/CustomerReviews.vue";
 import Loading from '../components/shared/Loading.vue';
+import { BCarousel } from 'bootstrap-vue';
+import { CarouselPlugin } from 'bootstrap-vue';
+
 
 Vue.use(VueTelInput);
+Vue.component('b-carousel', BCarousel);
+Vue.use(CarouselPlugin);
+
 
 export default {
   name: "IndexPage",
-  components: { Mainbanner, HomeCategories, RequirementEnqury, BuyerCategories, CustomerReviews, Loading },
+  components: { Mainbanner, HomeCategories, RequirementEnqury, BuyerCategories, CustomerReviews, Loading,},
   head() {
     return {
       title: 'VietnamFactoryb2b.com | Vietnam To The World',

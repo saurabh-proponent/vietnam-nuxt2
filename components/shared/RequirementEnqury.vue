@@ -13,42 +13,34 @@
                         <h1 class="main-heading">TELL US YOUR REQUIREMENT</h1>
                       </div>
                       <div class="col-lg-12">
-                        <div class="field-wrapper">
-                          <label>Enter Product/Service Name</label>
-                          <input type="text" class="text-field-input" />
+                        <div class="form-floating">
+                          <input type="text" class="form-control" id="floatingPassword" placeholder="Password" />
+                          <label for="productName">Enter Product/Service Name</label>
                         </div>
                       </div>
                       <div class="col-lg-12">
-                        <div class="field-wrapper">
-                          <label>Enter Person Name</label>
-                          <input type="text" class="text-field-input" />
+                        <div class="form-floating">
+                          <input type="text" class="form-control" id="personName" placeholder="Enter Name" />
+                          <label for="personName">Enter Person Name</label>
                         </div>
                       </div>
                       <div class="col-lg-6">
-                        <div class="field-wrapper number">
-                          <label>Enter Phone Number</label>
+                        <div class="form-floating number">
                           <vue-tel-input></vue-tel-input>
+                          <input type="number" class="form-control" id="phoneNumber" placeholder="Enter Phone Number" />
+                          <label for="phonNumber">Enter Phone Number</label>
                         </div>
                       </div>
                       <div class="col-lg-6">
-                        <div class="field-wrapper">
-                          <label>Enter Email</label>
-                          <input
-                            type="email"
-                            name="emai"
-                            id="email"
-                            class="text-field-input"
-                          />
+                        <div class="form-floating">
+                          <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                          <label for="floatingInput">Email address</label>
                         </div>
                       </div>
                       <div class="col-lg-12">
-                        <div class="field-wrapper text-area">
-                          <label>Describe Your Requirement</label>
-                          <textarea
-                            name="message"
-                            id="message"
-                            class="text-field-input"
-                          ></textarea>
+                        <div class="form-floating">
+                          <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                          <label for="floatingTextarea2">Comments</label>
                         </div>
                       </div>
                       <div class="col-lg-12">

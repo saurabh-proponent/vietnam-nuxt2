@@ -4,16 +4,20 @@
       <div class="row">
         <div class="product-sec-wraper sub-space bg-light desktop-view">
           <div class="callto-action">
+            <div class="heading-box px-4">
+              <div class="row">
+                <div class="col-lg-6">
+                  <nuxt-link :to="'/categories/' + category.slug">
+                    <h1 class="main-heading">{{ category.title }}</h1>
+                  </nuxt-link>
+                </div>
+                <div class="col-lg-6">
+                  <nuxt-link :to="'/categories/' + category.slug" class="cta-link">VIEW ALL <i
+                      class="fa-solid fa-angles-right"></i></nuxt-link>
+                </div>
+              </div>
+            </div>
             <div class="row">
-              <div class="col-lg-6">
-                <nuxt-link :to="'/categories/' + category.slug">
-                  <h1 class="main-heading">{{ category.title }}</h1>
-                </nuxt-link>
-              </div>
-              <div class="col-lg-6">
-                <nuxt-link :to="'/categories/' + category.slug" class="cta-link">VIEW ALL <i
-                    class="fa-solid fa-angles-right"></i></nuxt-link>
-              </div>
               <div class="col-lg-3 p-0">
                 <div class="left-wraper">
                   <img :src="category.image" class="img-fluid hot-sale-img" alt="" />
